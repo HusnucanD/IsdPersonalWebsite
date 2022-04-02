@@ -1,0 +1,24 @@
+
+<div class="faq">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div style="text-align: center;">
+                <p class="faq-title">{{ title }}</p>
+            </div>            
+            <div class="col-lg-9" *ngFor="let questionRow of questionRows; index as i" >
+                <div class="row" style="margin-bottom: 7.5px;">
+                    <div class="col-md-6" *ngFor="let question of questionRow.questions; index as j">
+                        <div [id]="'question' + ((i*2) + j)" class="faq-question border-button-question">
+                            {{ question.title }}
+                            <fa-icon class="question-icon" [icon]="faAngleDown"></fa-icon>  
+                        </div>
+                        <div [id]="'answer' + ((i*2) + j)" class="faq-answer">
+                            {{ question.answer }}
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+

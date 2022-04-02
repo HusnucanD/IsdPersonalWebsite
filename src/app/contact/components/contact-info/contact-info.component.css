@@ -1,0 +1,23 @@
+.contact-title {
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.contact-text {
+    color: #6A6A6A;
+    margin-bottom: 10px;
+}
+
+.contact-sub-text {
+    color: #6A6A6A;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 95%;
+}
+
+.contact-icon {
+    font-size: 130%;
+    margin-right: 5px;
+    color: #2980B9;
+}

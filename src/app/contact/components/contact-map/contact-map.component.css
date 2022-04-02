@@ -1,0 +1,18 @@
+.contact-map {
+    height: 400px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}

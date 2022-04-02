@@ -1,0 +1,13 @@
+
+<div class="post-box">
+    <div class="div-img">
+        <img [src]="imgUrl" class="box-img">
+    </div>
+    <div class="box-body">
+        <p class="box-title" title="{{ title }}">{{ title }}</p>
+        <div class="box-text" [innerHtml]="content"></div>
+        <div style="text-align: center;">
+            <a class="btn box-btn" (click)="postClick(id)">Read More</a>
+        </div>        
+    </div>
+</div>

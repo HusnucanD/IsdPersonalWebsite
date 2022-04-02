@@ -1,0 +1,18 @@
+{
+    "header": {    
+        "homeLinkText": "Home",
+        "servicesLinkText": "Services",
+        "aboutLinkText": "About",
+        "blogLinkText": "Blog",
+        "contactLinkText": "Contact",
+        "location": "Location",
+        "phone": "0555 555 55 55",
+        "title": "MyWebsite"
+    },
+    "footer": {
+        "contact": "contact",
+        "title": "MyWebsite",  
+        "description": "©Copyright [[Year]]. All rights reserved to [[Title]]. No content can be used without permission."  ,
+        "designed": "Created by IronSmithDesign"
+    }
+}

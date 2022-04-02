@@ -1,0 +1,35 @@
+.custom-label {
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.custom-form {
+    margin: 10px 0px 30px 0px;
+}
+
+.form-control {
+    border: 1px solid #888;
+    border-radius: 0px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.custom-textarea {
+    resize: none;
+}
+
+.custom-btn {
+    width: 100%;
+    border: 1px solid #888;
+    border-radius: 0px;
+    font-weight: 500;
+}
+
+.custom-btn:hover {
+    background-color: #2677AB;
+    color: #FFF;
+    border: 1px solid #2980B9;
+}

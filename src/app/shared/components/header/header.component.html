@@ -1,0 +1,66 @@
+
+<div class="navbar-upline">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9" style="margin: 4px auto;">
+                <fa-icon class="upline-icon" [icon]="faMap"></fa-icon>
+                <p class="upline-text">{{ string.location }}</p>
+                <fa-icon class="upline-icon" [icon]="faPhoneAlt"></fa-icon>
+                <p class="upline-text">{{ string.phone }}</p>                            
+                <a [href]="link.linkedin" target="_blank" style="color: #FFF;">
+                    <fa-icon class="upline-icon2" [icon]="faLinkedin"></fa-icon>  
+                </a>                                                                                                   
+                <a [href]="link.youtube" target="_blank" style="color: #FFF;">
+                    <fa-icon class="upline-icon2" [icon]="faYoutube"></fa-icon> 
+                </a>
+                <a [href]="link.instagram" target="_blank" style="color: #FFF;">
+                    <fa-icon class="upline-icon2" [icon]="faInstagram"></fa-icon>  
+                </a>
+                <a [href]="link.twitter" target="_blank" style="color: #FFF;">
+                    <fa-icon class="upline-icon2" [icon]="faTwitter"></fa-icon>
+                </a>                             
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9" style="margin: 0px auto;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #FFF !important;">
+                    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+                        <a class="navbar-brand" routerLink="/">
+                            <img src="../../../../assets/img/logo.svg" alt="Logo" width="50" height="50" 
+                                class="d-inline-block align-text-top" style="float: left;">
+                            <p class="navbar-brand-text">{{ string.title }}</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-top: 3.5px;">
+                            <div class="navbar-nav ms-auto">
+                            <a class="nav-link nav-link-custom" routerLink="/" routerLinkActive="nav-link-custom-active"
+                                [routerLinkActiveOptions]="{ exact: true }">
+                                {{ string.homeLinkText }}
+                            </a>                     
+                            <a class="nav-link nav-link-custom" routerLink="/services" routerLinkActive="nav-link-custom-active">
+                                {{ string.servicesLinkText }}
+                            </a>
+                            <a class="nav-link nav-link-custom" routerLink="/about" routerLinkActive="nav-link-custom-active">
+                                {{ string.aboutLinkText }}
+                            </a>
+                            <a class="nav-link nav-link-custom" routerLink="/blog" routerLinkActive="nav-link-custom-active">
+                                {{ string.blogLinkText }}
+                            </a>
+                            <a class="nav-link nav-link-custom" routerLink="/contact" routerLinkActive="nav-link-custom-active">
+                                {{ string.contactLinkText }}
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>        
+        </div>
+    </div>
+</div>

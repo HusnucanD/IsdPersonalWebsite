@@ -1,0 +1,21 @@
+
+.pages-div {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #EEE;
+    border-radius: 4px;
+    margin: 0 auto; 
+}
+
+.page-button {
+    margin: 0 10px 4px 10px;
+    color: #222;
+    text-decoration: unset;
+    cursor: pointer;
+    padding: 2.5px 2.5px 0px 2.5px;
+    border-bottom: 2px solid #EEE;
+}
+
+.selected {
+    border-bottom: 2px solid #222;
+}

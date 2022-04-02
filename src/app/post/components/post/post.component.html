@@ -1,0 +1,28 @@
+
+<div class="container mt-5 pb-5 ">
+    <div class="row justify-content-md-center">
+        <div class="col-xl-9">        
+            <div class="row">
+                <div class="col-lg-9">
+                    <img class="post-img mb-4" [src]="imgUrl" />
+                    <h3 class="post-title">{{ title }}</h3>
+                    <p class="post-author mb-4">by {{ author }}</p>
+                    <div [innerHtml]="content" class="post-content"></div>
+                </div>
+                <div class="col-lg-3 sidebar">
+                    <p class="latest-posts">Latest Posts</p>
+                    <div *ngFor="let post of latestPosts;" class="mb-2 latest-post" (click)="latestPostClicked(post.id)">
+                        <div class="latest-post-img-div">
+                            <img class="latest-post-img" [src]="post.imgUrl" />
+                        </div>
+                        <div class="latest-post-text-div">
+                            <p class="latest-post-text">
+                                {{ post.title }}
+                            </p>
+                        </div>                       
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

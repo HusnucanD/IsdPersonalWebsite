@@ -1,0 +1,72 @@
+
+.footer {
+    background-color: #333;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+
+.icon {
+    width: 80px;
+    height: 60px;
+    filter: invert(41%) sepia(6%) saturate(13%) hue-rotate(328deg) brightness(93%) contrast(89%);
+}
+
+.icon-text {
+    display: block;
+    font-weight: 900; 
+    float: left;  
+    margin-top: 4px;
+    color: #666;
+    font-size: 115%;
+    margin-bottom: 2.5px;
+}
+
+.description {
+    display: inline-block;
+    color: #666;
+    font-size: 78%;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.social-icon {  
+    color: #666; 
+    float: right;
+    font-size: 145%; 
+    margin: -3px 0px -6px 12.5px;
+    transition: all .25s ease-in-out;   
+}
+
+.social-icon:hover {
+    color: #f7d794;
+}
+
+.btn-contact {
+    right: 10px;
+    top: 40px;
+    position: absolute;
+    color: #666;
+    border: 2px solid #666;
+    border-radius: 0;
+    width: auto;
+    font-weight: 500;
+    padding: 3px 12px;
+    transition: all 0.2s;
+    font-size: 95%;
+}
+
+.btn-contact:hover {
+    color: #f7d794;
+    border-color: #f7d794;
+}
+
+.footer2 {
+    background-color: #262626;
+}
+
+.design-text {
+    color: #666;
+    font-size: 75%;
+    font-weight: 500;
+    margin: 5px auto;
+}
