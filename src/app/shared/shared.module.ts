@@ -5,13 +5,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DynamicHeightDirective } from './directives/dynamic-height.directive';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    DynamicHeightDirective
   ],
   imports: [
     CommonModule,
@@ -22,8 +20,7 @@ import { DynamicHeightDirective } from './directives/dynamic-height.directive';
   exports: [
     HeaderComponent,
     FooterComponent,
-    FontAwesomeModule,
-    DynamicHeightDirective
+    FontAwesomeModule
   ]
 })
 

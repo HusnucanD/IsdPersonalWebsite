@@ -1,5 +1,6 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { State } from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'contact',
@@ -7,15 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 
-export class ContactComponent implements OnInit{ 
+export class ContactComponent{ 
   imgUrl: string;
-  title: string;
-  text: string;
-  buttonText: string;
-  ngOnInit() {
+  string: any;
+  constructor(private state: State) {
+    this.string = this.state.string.landing_contact;
     this.imgUrl = '../../../../assets/img/contact-icon.svg';
-    this.title = 'Got a Question';
-    this.text = 'Contact us for any questions or making an appointment';
-    this.buttonText = 'Contact';
   }
 }

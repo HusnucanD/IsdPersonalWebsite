@@ -14,5 +14,19 @@
         "title": "MyWebsite",  
         "description": "©Copyright [[Year]]. All rights reserved to [[Title]]. No content can be used without permission."  ,
         "designed": "Created by IronSmithDesign"
+    },
+    "landing_carousel": {
+        "text1": "Lorem Ipsum Dolor Sit Amet Consectetur",
+        "text2": "Adipiscing Elit, Sed Do Eiusmod",
+        "text3": "Tempor Incididunt Ut Labore Et",
+        "button": "Get Contact"
+    },
+    "landing_contact": {
+        "title": "Got a Question",
+        "text": "Contact us for any questions or making an appointment",
+        "buttonText": "Contact"
+    },
+    "landing_faq": {
+        "title": "FAQ"
     }
 }

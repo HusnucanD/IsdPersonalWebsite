@@ -23,20 +23,18 @@ export class PostComponent implements OnInit{
   }
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {
-      this.id = params['id'];
-      this.state.Posts.pipe(first()).subscribe(posts => {
-        let post = posts.find(x => x.id == this.id);
-        if (post != undefined) {
-          this.title = post.title;
-          this.content = post.content;
-          this.imgUrl = post.imgUrl;
-          this.author = post.author;
-        }
-        let otherPosts = posts.filter(x => x.id != this.id);
-        for (let i = 0; i < otherPosts.length && i < 3; i++) {
-          this.latestPosts[i] = otherPosts[i];
-        }  
-      });
+      this.id = params['id'];  
+      let post = this.state.posts.find(x => x.id == this.id);
+      if (post != undefined) {
+        this.title = post.title;
+        this.content = post.content;
+        this.imgUrl = post.imgUrl;
+        this.author = post.author;
+      }
+      let otherPosts = this.state.posts.filter(x => x.id != this.id);
+      for (let i = 0; i < otherPosts.length && i < 3; i++) {
+        this.latestPosts[i] = otherPosts[i];
+      } 
     });   
   }
   latestPostClicked(id: number) {

@@ -2,6 +2,7 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { HostListener } from "@angular/core";
 import KeenSlider, { KeenSliderInstance } from "keen-slider"
+import { State } from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'carousel',
@@ -16,19 +17,19 @@ export class CarouselComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild("sliderRef", { static: true }) sliderRef: ElementRef<HTMLElement>; 
   screenWidth: number;
   images: String[];
-  texts: String[];
-  opacities: number[] = []
+  texts: String[] = [];
+  opacities: number[] = [];
   slider: KeenSliderInstance;
-  constructor() {
-    this.getScreenSize();  
+  buttonText: string;
+  constructor(private state: State) {
+    this.getScreenSize(); 
+    this.texts.push(this.state.string.landing_carousel.text1); 
+    this.texts.push(this.state.string.landing_carousel.text2); 
+    this.texts.push(this.state.string.landing_carousel.text3); 
+    this.buttonText = this.state.string.landing_carousel.button;
   }
   ngOnInit() {
     this.setImages();
-    this.texts = [      
-      "Lorem Ipsum Dolor Sit Amet Consectetur",
-      "Adipiscing Elit, Sed Do Eiusmod",      
-      "Tempor Incididunt Ut Labore Et"
-    ];
   }
   @HostListener('window:resize', ['$event']) getScreenSize() {
     this.screenWidth = window.innerWidth;

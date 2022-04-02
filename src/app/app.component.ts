@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.state.setString();
     this.state.setLink();
-    this.state.SetPosts();
+    this.state.setTabs();
+    this.state.setFaqs();
+    this.state.setPosts();
   }
 }
