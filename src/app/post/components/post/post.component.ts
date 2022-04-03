@@ -18,8 +18,9 @@ export class PostComponent implements OnInit{
   imgUrl: string;
   author: string;
   latestPosts: Post[] = [];
+  string: any;
   constructor(private state: State, private router: Router, private activatedRoute: ActivatedRoute) {
-    //
+    this.string = this.state.string.post_post;
   }
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {

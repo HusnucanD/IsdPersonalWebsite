@@ -1,6 +1,7 @@
 .contact-map {
     height: 400px;
     box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+    background-color: #DDD;
 }
 
 .mapouter {

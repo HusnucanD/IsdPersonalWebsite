@@ -10,15 +10,13 @@
                     <div [innerHtml]="content" class="post-content"></div>
                 </div>
                 <div class="col-lg-3 sidebar">
-                    <p class="latest-posts">Latest Posts</p>
+                    <p class="latest-posts">{{ string.latest }}</p>
                     <div *ngFor="let post of latestPosts;" class="mb-2 latest-post" (click)="latestPostClicked(post.id)">
                         <div class="latest-post-img-div">
                             <img class="latest-post-img" [src]="post.imgUrl" />
                         </div>
                         <div class="latest-post-text-div">
-                            <p class="latest-post-text">
-                                {{ post.title }}
-                            </p>
+                            <p class="latest-post-text">{{ post.title }}</p>
                         </div>                       
                     </div>
                 </div>

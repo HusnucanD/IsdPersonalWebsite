@@ -28,5 +28,29 @@
     },
     "landing_faq": {
         "title": "FAQ"
+    },
+    "post_postMain": {
+        "title": "Blog"
+    },
+    "post_postBox": {
+        "readMore": "Read More"
+    },
+    "post_post": {
+        "latest": "Latest Posts"
+    },
+    "contact_contactInfo": {
+        "title": "Get in Touch",
+        "text": "For any of your questions or planning a meet-up please get in touch. You can call, send a mail, or send a message over our web site.",
+        "subTextAddress": "2880 Broadway - New York 10025",
+        "subTextPhone": "+1 (555) 123-4567",
+        "subTextEmail": "test-mail@test.com"
+    },
+    "contact_contactForm": {
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "submit": "Submit"
     }
 }

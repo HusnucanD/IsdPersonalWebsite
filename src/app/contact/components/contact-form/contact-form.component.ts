@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { State } from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'contact-form',
@@ -10,6 +11,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 export class ContactFormComponent implements OnInit {
   contactForm: FormGroup;
+  string: any;
+  constructor(private state: State) {
+    this.string = this.state.string.contact_contactForm;
+  }
   ngOnInit() {
     this.contactForm = new FormGroup({
       'name': new FormControl(null, Validators.required),
