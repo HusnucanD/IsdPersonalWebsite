@@ -1,14 +1,12 @@
-
 import { Component } from '@angular/core';
 import { State } from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
-
-export class ContactComponent{ 
+export class ContactComponent {
   imgUrl: string;
   string: any;
   constructor(private state: State) {

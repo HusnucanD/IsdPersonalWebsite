@@ -1,20 +1,23 @@
-
-<div [hidden]="!visible" class="container tab" [ngClass]="{'animation': animation}">
-    <div class="row justify-content-md-center">
-        <div class="col-lg-9">
-            <div class="container" style="padding: 0px;">
-                <div class="row" style="padding-top: 25px;">
-                    <div class="col-lg-7">
-                        <div class="tab-img-div">
-                            <img [src]="imgUrl" class="tab-img" />
-                        </div>
-                    </div>
-                    <div class="col-lg-5" style="margin-top: 25;">
-                        <h3>{{ title }}</h3>
-                        <div [innerHtml]="content"></div>
-                    </div>
-                </div>
+<div
+  [hidden]="!visible"
+  class="container tab"
+  [ngClass]="{ animation: animation }"
+>
+  <div class="row justify-content-md-center">
+    <div class="col-lg-9">
+      <div class="container" style="padding: 0px">
+        <div class="row" style="padding-top: 25px">
+          <div class="col-lg-7">
+            <div class="tab-img-div">
+              <img [src]="imgUrl" class="tab-img" />
             </div>
+          </div>
+          <div class="col-lg-5" style="margin-top: 25">
+            <h3>{{ title }}</h3>
+            <div [innerHtml]="contentSafe"></div>
+          </div>
         </div>
-    </div> 
+      </div>
+    </div>
+  </div>
 </div>

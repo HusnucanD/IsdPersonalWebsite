@@ -1,55 +1,73 @@
-
 .tab {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95); 
-    transition: all 0.6s ease 0s;
-    -webkit-transition: all 0.6s ease 0s;
-    -ms-transition: all 0.6s ease 0s;
-    padding: 0px !important;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -ms-transition: all 0.6s ease 0s;
+  padding: 0px !important;
 }
 
 .tab.animation {
-    width: 100%;
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
 }
 
 .tab-img {
-    width: 100%; 
-    transform: translate(30px, 25px);
-    box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+  width: 100%;
+  transform: translate(30px, 25px);
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
 }
 
 .tab-img-div {
-    width: calc(100% - 50px); 
-    margin-bottom: 50px;
-    margin-right: 50px;
-    background-color: #FFFFFF;
-    background-image: radial-gradient(#5ca9db 1.5px, #FFFFFF 1.1px);
-    background-size: 10px 10px;
+  width: calc(100% - 50px);
+  margin-bottom: 50px;
+  margin-right: 50px;
+  background-color: #ffffff;
+  background-image: radial-gradient(#5ca9db 1.5px, #ffffff 1.1px);
+  background-size: 10px 10px;
 }
 
-@media (max-width: 993px) { 
-    .tab-img-div {
-        min-height: 250px; 
-    }
+@media (max-width: 993px) {
+  .tab-img-div {
+    min-height: 250px;
+  }
 }
 
-@media (max-width: 576px) { 
-    .tab-img { 
-        transform: none;
-    }
-    .tab-img-div {
-        min-height: 200px; 
-        background-image: none;
-        margin-right: 0px;
-        margin-bottom: 25px;
-        width: 100%;
-    }
+@media (max-width: 576px) {
+  .tab-img {
+    transform: none;
+  }
+
+  .tab-img-div {
+    min-height: 200px;
+    background-image: none;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
+
+.custom-btn {
+  color: #373737;
+  background-color: #fff;
+  border: 1px solid #373737;
+  border-radius: 0px;
+  font-weight: 500;
+  margin: 15px auto 0;
+  display: block;
+  padding: 6px 20px;
+  transition: all 0.2s;
+}
+
+.custom-btn:hover {
+  color: #fff;
+  background-color: #2677ab;
+  border: 1px solid #2677ab;
 }

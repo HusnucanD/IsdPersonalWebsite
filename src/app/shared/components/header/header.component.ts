@@ -1,15 +1,18 @@
-
 import { Component } from '@angular/core';
-import { faMap, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faLinkedin, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faMap, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTwitter,
+  faLinkedin,
+  faInstagram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import { State } from '../../services/state.service';
 
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
-
 export class HeaderComponent {
   faMap = faMap;
   faPhoneAlt = faPhoneAlt;

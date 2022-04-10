@@ -1,4 +1,3 @@
-
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { AdminRoutingModule } from './admin-routing.module';
@@ -7,17 +6,9 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
 import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
-  declarations: [
-    AdminMainComponent,
-    ProfileComponent,
-    CreatePostComponent
-  ],
-  imports: [
-    CommonModule,
-    AdminRoutingModule
-  ],
+  declarations: [AdminMainComponent, ProfileComponent, CreatePostComponent],
+  imports: [CommonModule, AdminRoutingModule],
   providers: [],
-  bootstrap: [AdminMainComponent]
+  bootstrap: [AdminMainComponent],
 })
-
-export class AdminModule { }
+export class AdminModule {}

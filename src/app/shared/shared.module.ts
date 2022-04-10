@@ -1,4 +1,3 @@
-
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -7,21 +6,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-  ],
-  imports: [
-    CommonModule,
-    FontAwesomeModule,
-    RouterModule
-  ],
+  declarations: [HeaderComponent, FooterComponent],
+  imports: [CommonModule, FontAwesomeModule, RouterModule],
   providers: [],
-  exports: [
-    HeaderComponent,
-    FooterComponent,
-    FontAwesomeModule
-  ]
+  exports: [HeaderComponent, FooterComponent, FontAwesomeModule],
 })
-
-export class SharedModule { }
+export class SharedModule {}

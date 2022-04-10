@@ -1,4 +1,3 @@
-
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
@@ -13,15 +12,10 @@ import { PostBoxComponent } from './components/post-box/post-box.component';
     PostMainComponent,
     PostsComponent,
     PostComponent,
-    PostBoxComponent
+    PostBoxComponent,
   ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    PostRoutingModule
-  ],
+  imports: [CommonModule, SharedModule, PostRoutingModule],
   providers: [],
-  bootstrap: [PostMainComponent]
+  bootstrap: [PostMainComponent],
 })
-
-export class PostModule { }
+export class PostModule {}

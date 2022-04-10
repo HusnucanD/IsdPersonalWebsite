@@ -1,15 +1,18 @@
-
 import { Component, OnInit } from '@angular/core';
-import { faTwitter, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {
+  faTwitter,
+  faLinkedin,
+  faInstagram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import { State } from '../../services/state.service';
 
 @Component({
   selector: 'footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.css'],
 })
-
-export class FooterComponent{
+export class FooterComponent {
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
   faInstagram = faInstagram;
@@ -21,7 +24,7 @@ export class FooterComponent{
     this.string = this.state.string.footer;
     this.link = this.state.link.footer;
     this.description = this.string.description
-      .replace("[[Year]]", new Date().getFullYear().toString())
-      .replace("[[Title]]", this.string.title);  
+      .replace('[[Year]]', new Date().getFullYear().toString())
+      .replace('[[Title]]', this.string.title);
   }
 }

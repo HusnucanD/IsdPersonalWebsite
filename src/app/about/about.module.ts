@@ -6,19 +6,14 @@ import { AboutRoutingModule } from './about-routing.module';
 import { AboutMainComponent } from './components/about-main/about-main.component';
 
 @NgModule({
-  declarations: [
-    AboutMainComponent
-  ],
+  declarations: [AboutMainComponent],
   imports: [
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
-    AboutRoutingModule
+    AboutRoutingModule,
   ],
   providers: [],
-  bootstrap: [AboutMainComponent]
+  bootstrap: [AboutMainComponent],
 })
-
-export class AboutModule { 
-
-}
+export class AboutModule {}

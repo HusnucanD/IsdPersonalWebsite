@@ -1,81 +1,81 @@
-
 .post-img {
-    width: 100%;
-    box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 5%) 0px 1px 3px 1px;
+  width: 100%;
+  box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 5%) 0px 1px 3px 1px;
 }
 
 .post-title {
-    font-family: 'Merriweather';
-    font-size: 160%;
-    text-align: center;
+  font-family: "Merriweather";
+  font-size: 160%;
+  text-align: center;
 }
 
 .post-author {
-    text-align: center;
-    font-style: italic;
-    font-size: 90%;
-    color: #666;
+  text-align: center;
+  font-style: italic;
+  font-size: 90%;
+  color: #666;
 }
 
 .post-content {
-    font-family: 'Merriweather';
-    font-size: 90%;
-    line-height: 26px;
-    text-align: justify;
+  font-family: "Merriweather";
+  font-size: 90%;
+  line-height: 26px;
+  text-align: justify;
 }
 
 .latest-posts {
-    font-size: 130%;
-    padding: 10px 0px 5px 0px;
-    border-bottom: 1px solid #999;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    cursor: default;
-    font-family: 'Merriweather';
+  font-size: 130%;
+  padding: 10px 0px 5px 0px;
+  border-bottom: 1px solid #999;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  cursor: default;
+  font-family: "Merriweather";
 }
 
 .latest-post {
-    transition: all 0.2s;
-    cursor: pointer;
-    padding: 3.5px 5px 5px 5px;
-    min-height: 50px;  
-    font-family: 'Merriweather';
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 3.5px 5px 5px 5px;
+  min-height: 50px;
+  font-family: "Merriweather";
 }
 
 .latest-post:hover {
-    background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .latest-post-img-div {
-    width: 52.5px; 
-    float: left;
-    margin-right: 7.5px;
+  width: 52.5px;
+  float: left;
+  margin-right: 7.5px;
 }
 
 .latest-post-img {
-    width: 100%; 
-    margin-top: 5px;
+  width: 100%;
+  margin-top: 5px;
 }
 
-@media screen and (max-width: 992px) {  
-    .latest-post-img {
-        margin-top: 0px;
-    }
+@media screen and (max-width: 992px) {
+  .latest-post-img {
+    margin-top: 0px;
+  }
 }
 
 .latest-post-text-div {
-    width: calc(100% - 60px);
-    float: left;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    display: -webkit-box;
-    -webkit-line-clamp: 2;  
-    -webkit-box-orient: vertical; 
-    word-wrap:break-word;
+  width: calc(100% - 60px);
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
 }
 
 .latest-post-text {
-    margin-left: 2.5px; 
-    margin-bottom: 5px; 
-    font-size: 87.5%;  
+  margin-left: 2.5px;
+  margin-bottom: 5px;
+  font-size: 87.5%;
 }

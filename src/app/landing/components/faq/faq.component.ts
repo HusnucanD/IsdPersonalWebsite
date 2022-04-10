@@ -1,4 +1,3 @@
-
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { State } from 'src/app/shared/services/state.service';
@@ -9,10 +8,9 @@ declare const $: any;
 @Component({
   selector: 'faq',
   templateUrl: './faq.component.html',
-  styleUrls: ['./faq.component.css']
+  styleUrls: ['./faq.component.css'],
 })
-
-export class FaqComponent implements AfterViewInit{ 
+export class FaqComponent implements AfterViewInit {
   faAngleDown = faAngleDown;
   string: any;
   questions: Faq[] = [];
@@ -21,10 +19,10 @@ export class FaqComponent implements AfterViewInit{
     this.questions = this.state.faqs;
   }
   ngAfterViewInit() {
-    for(let i = 0; i < this.questions.length; i++) {
-        $('#question' + i).click(() => {
-          $('#answer' + i).slideToggle();
-          $('#question' + i).toggleClass('border-button-question');       
+    for (let i = 0; i < this.questions.length; i++) {
+      $('#question' + i).click(() => {
+        $('#answer' + i).slideToggle();
+        $('#question' + i).toggleClass('border-button-question');
       });
     }
   }

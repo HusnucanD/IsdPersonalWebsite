@@ -1,33 +1,37 @@
-
 <div class="faq">
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div style="text-align: center;">
-                <p class="faq-title">{{ string.title }}</p>
-            </div>            
-            <div class="col-lg-9" *ngFor="let question of questions; index as i" >
-                <div *ngIf="i % 2 == 0" class="row" style="margin-bottom: 7.5px;">
-                    <div class="col-md-6">
-                        <div [id]="'question' + i" class="faq-question border-button-question">
-                            {{ questions[i].title }}
-                            <fa-icon class="question-icon" [icon]="faAngleDown"></fa-icon>  
-                        </div>
-                        <div [id]="'answer' + i" class="faq-answer">
-                            {{ questions[i].answer }}
-                        </div>       
-                    </div>
-                    <div class="col-md-6">
-                        <div [id]="'question' + (i+1)" class="faq-question border-button-question">
-                            {{ questions[i+1].title }}
-                            <fa-icon class="question-icon" [icon]="faAngleDown"></fa-icon>  
-                        </div>
-                        <div [id]="'answer' + (i+1)" class="faq-answer">
-                            {{ questions[i+1].answer }}
-                        </div>       
-                    </div>
-                </div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div style="text-align: center">
+        <p class="faq-title">{{ string.title }}</p>
+      </div>
+      <div class="col-lg-9" *ngFor="let question of questions; index as i">
+        <div *ngIf="i % 2 == 0" class="row" style="margin-bottom: 7.5px">
+          <div class="col-md-6">
+            <div
+              [id]="'question' + i"
+              class="faq-question border-button-question"
+            >
+              {{ questions[i].title }}
+              <fa-icon class="question-icon" [icon]="faAngleDown"></fa-icon>
             </div>
-        </div> 
+            <div [id]="'answer' + i" class="faq-answer">
+              {{ questions[i].answer }}
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              [id]="'question' + (i + 1)"
+              class="faq-question border-button-question"
+            >
+              {{ questions[i + 1].title }}
+              <fa-icon class="question-icon" [icon]="faAngleDown"></fa-icon>
+            </div>
+            <div [id]="'answer' + (i + 1)" class="faq-answer">
+              {{ questions[i + 1].answer }}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-

@@ -1,20 +1,35 @@
-
-<div class="container" style="padding-top: 30px; padding-bottom: 30px;"> 
-    <div *ngFor="let row of (data.rows.slice(((selectedPage-1) * 2), ((selectedPage-1) * 2) + 2))" class="row justify-content-md-center">
-        <div class="col-lg-10">
-            <div class="row">
-                <div *ngFor="let post of row.posts" class="col-md-4 mb-4">
-                    <post-box [Title]="post.title" [Content]="post.content" [ImgUrl]="post.imgUrl" 
-                        [Id]="post.id"></post-box>
-                </div>
-            </div>
+<div class="container" style="padding-top: 30px; padding-bottom: 30px">
+  <div
+    *ngFor="
+      let row of data.rows.slice(
+        (selectedPage - 1) * 2,
+        (selectedPage - 1) * 2 + 2
+      )
+    "
+    class="row justify-content-md-center"
+  >
+    <div class="col-lg-10">
+      <div class="row">
+        <div *ngFor="let post of row.posts" class="col-md-4 mb-4">
+          <post-box
+            [Title]="post.title"
+            [Content]="post.content"
+            [ImgUrl]="post.imgUrl"
+            [Id]="post.id"
+          ></post-box>
         </div>
+      </div>
     </div>
-    <div *ngIf="pagination" class="row">
-        <div class="pages-div">
-            <a *ngFor="let pageButton of pages" class="page-button" 
-                [ngClass]="{ 'selected': this.pageButton == this.selectedPage}" 
-                (click)="pageClick(pageButton)">{{pageButton}}</a>
-        </div>       
+  </div>
+  <div *ngIf="pagination" class="row">
+    <div class="pages-div">
+      <a
+        *ngFor="let pageButton of pages"
+        class="page-button"
+        [ngClass]="{ selected: this.pageButton == this.selectedPage }"
+        (click)="pageClick(pageButton)"
+        >{{ pageButton }}</a
+      >
     </div>
+  </div>
 </div>

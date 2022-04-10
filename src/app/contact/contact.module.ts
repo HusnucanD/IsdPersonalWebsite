@@ -13,18 +13,15 @@ import { ContactMapComponent } from './components/contact-map/contact-map.compon
     ContactMainComponent,
     ContactInfoComponent,
     ContactFormComponent,
-    ContactMapComponent
+    ContactMapComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
-    ContactRoutingModule
+    ContactRoutingModule,
   ],
   providers: [],
-  bootstrap: [ContactMainComponent]
+  bootstrap: [ContactMainComponent],
 })
-
-export class ContactModule { 
-
-}
+export class ContactModule {}

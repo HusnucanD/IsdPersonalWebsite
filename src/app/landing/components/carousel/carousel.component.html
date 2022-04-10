@@ -1,24 +1,39 @@
-
 <div class="fader" #sliderRef>
-    <div [ngStyle]="{ opacity: opacities[idx] }" class="fader__slide" *ngFor="let src of images; let idx = index">
-        <div class="layer"></div>
-        <img [src]="src" />
-        <svg class="arrow arrow--left" (click)="slider.prev()"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/>
-        </svg>
-        <svg class="arrow arrow--right" (click)="slider.next()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-        </svg>
-        <div class="image-text">
-            <span>
-                {{ texts[idx] }}
-            </span>
-            <br>
-            <button class="btn image-button" routerLink="/contact">
-                <span style="text-shadow: 0px 0px 14px rgb(0 0 0 / 50%)">
-                    {{ buttonText }}
-                </span>
-            </button>
-        </div>
+  <div
+    [ngStyle]="{ opacity: opacities[idx] }"
+    class="fader__slide"
+    *ngFor="let src of images; let idx = index"
+  >
+    <div class="layer"></div>
+    <img [src]="src" />
+    <svg
+      class="arrow arrow--left"
+      (click)="slider.prev()"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+      />
+    </svg>
+    <svg
+      class="arrow arrow--right"
+      (click)="slider.next()"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+    </svg>
+    <div class="image-text">
+      <span>
+        {{ texts[idx] }}
+      </span>
+      <br />
+      <button class="btn image-button" routerLink="/contact">
+        <span style="text-shadow: 0px 0px 14px rgb(0 0 0 / 50%)">
+          {{ buttonText }}
+        </span>
+      </button>
     </div>
+  </div>
 </div>

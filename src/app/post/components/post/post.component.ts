@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { first } from 'rxjs';
@@ -8,10 +7,9 @@ import { State } from 'src/app/shared/services/state.service';
 @Component({
   selector: 'post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css']
+  styleUrls: ['./post.component.css'],
 })
-
-export class PostComponent implements OnInit{
+export class PostComponent implements OnInit {
   id: number;
   title: string;
   content: string;
@@ -19,24 +17,28 @@ export class PostComponent implements OnInit{
   author: string;
   latestPosts: Post[] = [];
   string: any;
-  constructor(private state: State, private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(
+    private state: State,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {
     this.string = this.state.string.post_post;
   }
   ngOnInit() {
-    this.activatedRoute.params.subscribe(params => {
-      this.id = params['id'];  
-      let post = this.state.posts.find(x => x.id == this.id);
+    this.activatedRoute.params.subscribe((params) => {
+      this.id = params['id'];
+      let post = this.state.posts.find((x) => x.id == this.id);
       if (post != undefined) {
         this.title = post.title;
         this.content = post.content;
         this.imgUrl = post.imgUrl;
         this.author = post.author;
       }
-      let otherPosts = this.state.posts.filter(x => x.id != this.id);
+      let otherPosts = this.state.posts.filter((x) => x.id != this.id);
       for (let i = 0; i < otherPosts.length && i < 3; i++) {
         this.latestPosts[i] = otherPosts[i];
-      } 
-    });   
+      }
+    });
   }
   latestPostClicked(id: number) {
     this.router.navigate(['/blog/', id]);

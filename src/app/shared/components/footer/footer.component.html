@@ -1,36 +1,39 @@
-
 <div class="footer">
-    <div class="container">
-        <div class="row justify-content-md-center" style="padding-top: 10px;">
-            <div class="col-lg-10">
-                <div class="row">
-                    <div class="col" style="position: relative;">
-                        <img src="../../../../assets/img/logo.svg" alt="Logo" class="icon">                       
-                        <a [href]="link.linkedin" target="_blank">
-                            <fa-icon class="social-icon" [icon]="faLinkedin"></fa-icon>  
-                        </a>                                                                                                   
-                        <a [href]="link.youtube" target="_blank">
-                            <fa-icon class="social-icon" [icon]="faYoutube"></fa-icon> 
-                        </a>
-                        <a [href]="link.instagram" target="_blank">
-                            <fa-icon class="social-icon" [icon]="faInstagram"></fa-icon>  
-                        </a>
-                        <a [href]="link.twitter" target="_blank">
-                            <fa-icon class="social-icon" [icon]="faTwitter"></fa-icon>
-                        </a> 
-                        <button class="btn btn-contact">{{ string.contact }}</button>
-                    </div>               
-                </div>  
-                <div class="row">
-                    <p class="icon-text">{{ string.title }}</p>
-                    <p class="description">{{ description }}</p>
-                </div>       
-            </div>        
+  <div class="container">
+    <div class="row justify-content-md-center" style="padding-top: 10px">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col" style="position: relative">
+            <img
+              src="../../../../assets/img/logo.svg"
+              alt="Logo"
+              class="icon"
+            />
+            <a [href]="link.linkedin" target="_blank">
+              <fa-icon class="social-icon" [icon]="faLinkedin"></fa-icon>
+            </a>
+            <a [href]="link.youtube" target="_blank">
+              <fa-icon class="social-icon" [icon]="faYoutube"></fa-icon>
+            </a>
+            <a [href]="link.instagram" target="_blank">
+              <fa-icon class="social-icon" [icon]="faInstagram"></fa-icon>
+            </a>
+            <a [href]="link.twitter" target="_blank">
+              <fa-icon class="social-icon" [icon]="faTwitter"></fa-icon>
+            </a>
+            <button class="btn btn-contact">{{ string.contact }}</button>
+          </div>
         </div>
+        <div class="row">
+          <p class="icon-text">{{ string.title }}</p>
+          <p class="description">{{ description }}</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="footer2">
-    <div class="row" style="margin: 0px; text-align: center;">
-        <p class="design-text">{{ string.designed }}</p>
-    </div>
+  <div class="row" style="margin: 0px; text-align: center">
+    <p class="design-text">{{ string.designed }}</p>
+  </div>
 </div>

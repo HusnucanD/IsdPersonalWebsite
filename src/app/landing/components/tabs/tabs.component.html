@@ -1,28 +1,39 @@
-
-<div style="background-color: #ffffff;
-opacity: 1;
-background: repeating-linear-gradient( 45deg, #FEFEFE, #FEFEFE 10px, #ffffff 10px, #ffffff 50px );">
 <div class="container tabs-main">
-    <div class="row tab-header-row">       
-        <div *ngFor="let tab of tabs; index as i" class="col-lg-3">
-            <div class="tab-header animate__animated animate__fadeInUp" 
-                [ngClass]="{'tab-header-active': tab.visible}" (click)="tabClick(i)">
-                <div class="tab-header-img-div">
-                    <img [src]="tab.logoUrl"s class="tab-header-img" />
-                </div>  
-                <div class="tab-header-text-div">
-                    <p class="tab-header-text">{{ tab.title }}</p>
-                </div>           
-            </div>
-            <div *ngIf="mobileOn" style="margin-bottom: 40px; margin-left: 7.5px; margin-right: 7.5px;">
-                <tab [Title]="tab.title" [Content]="tab.content" [ImgUrl]="tab.imgUrl" [Visible]="tab.visible"></tab>
-            </div>          
+  <div class="row tab-header-row">
+    <div *ngFor="let tab of tabs; index as i" class="col-lg-3">
+      <div
+        class="tab-header animate__animated animate__fadeInUp"
+        [ngClass]="{ 'tab-header-active': tab.visible }"
+        (click)="tabClick(i)"
+      >
+        <div class="tab-header-img-div">
+          <img [src]="tab.logoUrl" s class="tab-header-img" />
         </div>
-    </div>   
-    <div *ngIf="!mobileOn" style="margin-top: 10px;">
-        <div class="row" *ngFor="let tab of tabs">       
-            <tab [Title]="tab.title" [Content]="tab.content" [ImgUrl]="tab.imgUrl" [Visible]="tab.visible"></tab>
+        <div class="tab-header-text-div">
+          <p class="tab-header-text">{{ tab.title }}</p>
         </div>
-    </div>   
-</div>
+      </div>
+      <div
+        *ngIf="mobileOn"
+        style="margin-bottom: 40px; margin-left: 7.5px; margin-right: 7.5px"
+      >
+        <tab
+          [Title]="tab.title"
+          [Content]="tab.content"
+          [ImgUrl]="tab.imgUrl"
+          [Visible]="tab.visible"
+        ></tab>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!mobileOn" style="margin-top: 10px">
+    <div class="row" *ngFor="let tab of tabs">
+      <tab
+        [Title]="tab.title"
+        [Content]="tab.content"
+        [ImgUrl]="tab.imgUrl"
+        [Visible]="tab.visible"
+      ></tab>
+    </div>
+  </div>
 </div>

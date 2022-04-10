@@ -6,19 +6,14 @@ import { ServiceRoutingModule } from './service-routing.module';
 import { ServiceMainComponent } from './components/service-main/service-main.component';
 
 @NgModule({
-  declarations: [
-    ServiceMainComponent
-  ],
+  declarations: [ServiceMainComponent],
   imports: [
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
-    ServiceRoutingModule
+    ServiceRoutingModule,
   ],
   providers: [],
-  bootstrap: [ServiceMainComponent]
+  bootstrap: [ServiceMainComponent],
 })
-
-export class ServiceModule { 
-
-}
+export class ServiceModule {}
