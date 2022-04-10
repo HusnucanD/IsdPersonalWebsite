@@ -10,10 +10,6 @@ export class AppComponent implements OnInit {
   title = 'Personal Website';
   constructor(private state: State) {}
   ngOnInit() {
-    this.state.setString();
-    this.state.setLink();
-    this.state.setTabs();
-    this.state.setFaqs();
-    this.state.setPosts();
+    this.state.setAll();
   }
 }

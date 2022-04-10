@@ -22,7 +22,8 @@
 .tab-img {
   width: 100%;
   transform: translate(30px, 25px);
-  box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+  border-right: 4px solid #2677ab;
+  border-bottom: 4px solid #2677ab;
 }
 
 .tab-img-div {
@@ -43,6 +44,7 @@
 @media (max-width: 576px) {
   .tab-img {
     transform: none;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
   }
 
   .tab-img-div {

@@ -10,6 +10,14 @@ import * as PostJson from '../../../assets/json/post.json';
   providedIn: 'root',
 })
 export class State {
+  setAll() {
+    this.setString();
+    this.setLink();
+    this.setTabs();
+    this.setFaqs();
+    this.setPosts();
+  }
+
   /* String */
   public string: any;
   setString() {

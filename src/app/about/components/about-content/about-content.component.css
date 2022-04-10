@@ -1,0 +1,33 @@
+.profile-main {
+  line-height: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-text {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.profile-list {
+  margin-bottom: 20px;
+}
+
+.profile-list-title {
+  margin-bottom: 0;
+  margin-left: 18.5px;
+}
+
+.profile-list-title-icon {
+  color: #2980b9;
+  position: absolute;
+  font-size: 120%;
+  margin-right: 5px;
+}
+
+.profile-list-subtitle {
+  margin-bottom: 0;
+  margin-left: 18.5px;
+  color: #999;
+  font-size: 95%;
+}
