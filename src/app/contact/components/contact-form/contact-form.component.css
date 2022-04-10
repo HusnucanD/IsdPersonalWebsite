@@ -1,10 +1,10 @@
+.custom-form {
+  margin: 10px 0px 30px 0px;
+}
+
 .custom-label {
   font-weight: 500;
   font-size: 90%;
-}
-
-.custom-form {
-  margin: 10px 0px 30px 0px;
 }
 
 .form-control {
