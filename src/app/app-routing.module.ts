@@ -9,17 +9,29 @@ const routes: Routes = [
     pathMatch: "full" 
   },
   {
+    path: "services",
+    loadChildren: () => import('./service/service.module').then(m => m.ServiceModule)
+  },
+  {
+    path: "about",
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+  },
+  {
     path: "blog",
     loadChildren: () => import('./post/post.module').then(m => m.PostModule)
+  },
+  {
+    path: "contact",
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
   },
   {
     path: "admin",
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
-    path: "contact",
-    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
-  }
+    path: "**", 
+    redirectTo: "" 
+  },
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@
 }
 
 .form-control {
-    border: 1px solid #888;
+    border: 1px solid #BBB;
     border-radius: 0px;
 }
 
@@ -21,10 +21,13 @@
 }
 
 .custom-btn {
-    width: 100%;
-    border: 1px solid #888;
+    color: #373737;
+    background-color: #FFF;
+    border: 1px solid #373737;
+    width: 100%;  
     border-radius: 0px;
-    font-weight: 500;
+    font-weight: 500; 
+    transition: all .2s; 
 }
 
 .custom-btn:hover {

@@ -22,13 +22,17 @@
 
 .tab-img {
     width: 100%; 
+    transform: translate(30px, 25px);
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
 }
 
 .tab-img-div {
-    width: 100%; 
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    background-color: #888;
-    margin-bottom: 25px;
+    width: calc(100% - 50px); 
+    margin-bottom: 50px;
+    margin-right: 50px;
+    background-color: #FFFFFF;
+    background-image: radial-gradient(#5ca9db 1.5px, #FFFFFF 1.1px);
+    background-size: 10px 10px;
 }
 
 @media (max-width: 993px) { 
@@ -38,7 +42,14 @@
 }
 
 @media (max-width: 576px) { 
+    .tab-img { 
+        transform: none;
+    }
     .tab-img-div {
         min-height: 200px; 
+        background-image: none;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        width: 100%;
     }
 }

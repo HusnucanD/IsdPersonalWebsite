@@ -1,5 +1,8 @@
 
-<div class="container" style="margin-top: 10px; margin-bottom: 20px; padding-left: 0px; padding-right: 0px;">
+<div style="background-color: #ffffff;
+opacity: 1;
+background: repeating-linear-gradient( 45deg, #FEFEFE, #FEFEFE 10px, #ffffff 10px, #ffffff 50px );">
+<div class="container tabs-main">
     <div class="row tab-header-row">       
         <div *ngFor="let tab of tabs; index as i" class="col-lg-3">
             <div class="tab-header animate__animated animate__fadeInUp" 
@@ -21,4 +24,5 @@
             <tab [Title]="tab.title" [Content]="tab.content" [ImgUrl]="tab.imgUrl" [Visible]="tab.visible"></tab>
         </div>
     </div>   
+</div>
 </div>

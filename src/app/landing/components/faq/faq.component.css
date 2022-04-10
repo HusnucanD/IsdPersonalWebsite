@@ -26,11 +26,11 @@
     color: #444;
     position: relative;
     transition: all 0.2s;
-    background-color: #EDEDED;
+    background-color: #E6E6E6;
 }
 
 .faq-question:hover {
-    background-color: #EDEDED;
+    background-color: #E6E6E6;
 }
 
 .question-icon {
