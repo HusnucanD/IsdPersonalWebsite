@@ -20,18 +20,6 @@
   resize: none;
 }
 
-.custom-btn {
-  color: #373737;
-  background-color: #fff;
-  border: 1px solid #373737;
+.btn-custom {
   width: 100%;
-  border-radius: 0px;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.custom-btn:hover {
-  color: #fff;
-  background-color: #2677ab;
-  border: 1px solid #2677ab;
 }

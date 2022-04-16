@@ -34,3 +34,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #666;
 }
+
+.btn-custom {
+  color: #373737;
+  background-color: #fff;
+  border: 1px solid #373737;
+  border-radius: 0px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-custom:hover {
+  color: #fff;
+  background-color: #2677ab;
+  border: 1px solid #2677ab;
+}

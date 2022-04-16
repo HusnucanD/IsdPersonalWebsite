@@ -70,13 +70,22 @@
                 >
                   {{ string.homeLinkText }}
                 </a>
-                <a
-                  class="nav-link nav-link-custom"
-                  routerLink="/services"
-                  routerLinkActive="nav-link-custom-active"
-                >
-                  {{ string.servicesLinkText }}
-                </a>
+                <div class="nav-link-custom-div">
+                  <a
+                    class="nav-link nav-link-custom-dropdown dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {{ string.servicesLinkText }}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Service 1</a>
+                    <a class="dropdown-item" href="#">Service 2</a>
+                    <a class="dropdown-item" href="#">Service 3</a>
+                  </div>
+                </div>
                 <a
                   class="nav-link nav-link-custom"
                   routerLink="/about"

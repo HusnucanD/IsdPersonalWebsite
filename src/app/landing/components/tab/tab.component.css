@@ -56,20 +56,8 @@
   }
 }
 
-.custom-btn {
-  color: #373737;
-  background-color: #fff;
-  border: 1px solid #373737;
-  border-radius: 0px;
-  font-weight: 500;
-  margin: 15px auto 0;
+.btn-custom {
   display: block;
+  margin: 15px auto 0;
   padding: 6px 20px;
-  transition: all 0.2s;
-}
-
-.custom-btn:hover {
-  color: #fff;
-  background-color: #2677ab;
-  border: 1px solid #2677ab;
 }
