@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { faMap, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMap,
+  faPhoneAlt,
+  faAngleDoubleDown,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faTwitter,
   faLinkedin,
@@ -20,6 +24,7 @@ export class HeaderComponent {
   faLinkedin = faLinkedin;
   faInstagram = faInstagram;
   faYoutube = faYoutube;
+  faAngleDoubleDown = faAngleDoubleDown;
   string: any;
   link: any;
   constructor(private state: State) {
