@@ -1,13 +1,13 @@
 .profile-header {
   text-align: center;
   position: relative;
-  background-color: #27ae60;
+  background-color: #00804c;
   margin-bottom: 90px;
 }
 
 .profile-name {
   color: #fff;
-  font-size: 230%;
+  font-size: 220%;
   font-weight: 600;
   letter-spacing: 3px;
   margin-bottom: 5px;
@@ -15,7 +15,7 @@
 
 .profile-title {
   color: #d7d7d7;
-  font-size: 130%;
+  font-size: 120%;
   font-weight: 500;
   letter-spacing: 0.5px;
   margin-bottom: 15px;

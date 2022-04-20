@@ -11,6 +11,8 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { State } from '../../services/state.service';
+import { Service } from '../../models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header',
@@ -27,8 +29,13 @@ export class HeaderComponent {
   faAngleDoubleDown = faAngleDoubleDown;
   string: any;
   link: any;
-  constructor(private state: State) {
+  services: Service[] = [];
+  constructor(private state: State, private router: Router) {
     this.string = this.state.string.header;
     this.link = this.state.link.header;
+    this.services = this.state.services;
+  }
+  isServiceOn() {
+    return this.router.url.includes('services');
   }
 }

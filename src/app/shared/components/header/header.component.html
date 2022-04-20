@@ -73,6 +73,7 @@
                 <div class="nav-link-custom-div">
                   <a
                     class="nav-link nav-link-custom-dropdown"
+                    [ngClass]="{ 'nav-link-custom-active': isServiceOn() }"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -81,36 +82,23 @@
                     {{ string.servicesLinkText }}
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" routerLink="/services/1">
+                    <a
+                      *ngFor="let service of services"
+                      class="dropdown-item"
+                      [routerLink]="'/services/' + service.link"
+                      routerLinkActive="dropdown-item-active"
+                    >
                       <div class="dropdown-item-div">
                         <fa-icon
                           class="angle-down"
                           [icon]="faAngleDoubleDown"
                         ></fa-icon>
-                        <p class="dropdown-item-text">Dolores Eos</p>
-                        <p class="dropdown-item-subtext">
-                          Etiam sodales molestie
+                        <p class="dropdown-item-text">
+                          {{ service.title }}
                         </p>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" routerLink="/services/2">
-                      <div class="dropdown-item-div">
-                        <fa-icon
-                          class="angle-down"
-                          [icon]="faAngleDoubleDown"
-                        ></fa-icon>
-                        <p class="dropdown-item-text">Qui Ratione</p>
-                        <p class="dropdown-item-subtext">Odio morbi quis</p>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" routerLink="/services/3">
-                      <div class="dropdown-item-div">
-                        <fa-icon
-                          class="angle-down"
-                          [icon]="faAngleDoubleDown"
-                        ></fa-icon>
-                        <p class="dropdown-item-text">Exercitationem</p>
-                        <p class="dropdown-item-subtext">Viverra adipiscing</p>
+                        <p class="dropdown-item-subtext">
+                          {{ service.subTitle }}
+                        </p>
                       </div>
                     </a>
                   </div>

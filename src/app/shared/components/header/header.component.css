@@ -231,8 +231,7 @@
   border-radius: 0;
   margin-top: 7.5px;
   margin-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
   border: 1.5px solid #2980b9;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -259,6 +258,7 @@
 
 .dropdown-item {
   transition: all 0.2s;
+  padding: 6px 30px;
 }
 
 .dropdown-item-div {
@@ -293,15 +293,15 @@
   margin-top: -2.5px;
 }
 
-.dropdown-item:hover {
-  background-color: transparent;
+.dropdown-item:hover,
+.dropdown-item-active {
+  background-color: #eee;
 }
 
-.dropdown-item:hover .dropdown-item-text {
-  color: #2980b9;
-}
-
-.dropdown-item:hover .angle-down {
+.dropdown-item:hover .dropdown-item-text,
+.dropdown-item:hover .angle-down,
+.dropdown-item-active .dropdown-item-text,
+.dropdown-item-active .angle-down {
   color: #2980b9;
 }
 

@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Faq, Tab, Post } from '../models';
+import { Faq, Tab, Post, Service } from '../models';
 import * as StringJson from '../../../assets/json/string.json';
 import * as LinkJson from '../../../assets/json/link.json';
 import * as TabJson from '../../../assets/json/tab.json';
 import * as FaqJson from '../../../assets/json/faq.json';
+import * as ServiceJson from '../../../assets/json/service.json';
 import * as PostJson from '../../../assets/json/post.json';
 
 @Injectable({
@@ -15,6 +16,7 @@ export class State {
     this.setLink();
     this.setTabs();
     this.setFaqs();
+    this.setServices();
     this.setPosts();
   }
 
@@ -55,6 +57,23 @@ export class State {
     this.faqs = [];
     for (let i = 0; i < object.length; i++) {
       this.faqs.push(new Faq(object[i].id, object[i].title, object[i].answer));
+    }
+  }
+
+  /* Service */
+  public services: Service[] = [];
+  setServices() {
+    const object = JSON.parse(JSON.stringify(ServiceJson));
+    this.services = [];
+    for (let i = 0; i < object.length; i++) {
+      this.services.push(
+        new Service(
+          object[i].title,
+          object[i].subTitle,
+          object[i].content,
+          object[i].title.replace(/\s/g, '-').toLowerCase()
+        )
+      );
     }
   }
 
