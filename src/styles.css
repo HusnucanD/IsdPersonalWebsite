@@ -49,3 +49,9 @@ body {
   background-color: #2677ab;
   border: 1px solid #2677ab;
 }
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}

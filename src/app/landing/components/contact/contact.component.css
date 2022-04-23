@@ -65,9 +65,3 @@
 .btn-contact:hover {
   transform: scale(1.1);
 }
-
-.btn-contact:focus,
-.btn-contact:active {
-  outline: none !important;
-  box-shadow: none;
-}
