@@ -4,69 +4,75 @@
   padding-bottom: 12.5px;
 }
 
-.icon {
+.footer__icon {
   width: 80px;
   height: 60px;
   filter: invert(41%) sepia(6%) saturate(13%) hue-rotate(328deg) brightness(93%)
     contrast(89%);
 }
 
-.icon-text {
-  display: block;
-  font-weight: 700;
-  float: left;
-  margin-top: 4px;
-  color: #666;
-  font-size: 115%;
-  margin-bottom: 2.5px;
-}
-
-.description {
-  display: inline-block;
-  color: #666;
-  font-size: 78%;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.social-icon {
-  color: #666;
+.footer__social-icon {
   float: right;
-  font-size: 145%;
   margin: -3px 0px -6px 12.5px;
+  color: #666;
+  font-size: 145%;
   transition: all 0.25s ease-in-out;
 }
 
-.social-icon:hover {
+.footer__social-icon:hover {
   color: #f7d794;
 }
 
-.btn-contact {
-  right: 10px;
-  top: 40px;
-  position: absolute;
+.footer__icon-text {
+  display: block;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 2.5px;
+  letter-spacing: 0.5px;
   color: #666;
+  font-size: 115%;
+  font-weight: 700;
+}
+
+.footer__description {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #666;
+  font-size: 78%;
+  font-weight: 600;
+}
+
+.btn--contact {
+  position: absolute;
+  top: 40px;
+  right: 10px;
   border: 2px solid #666;
   border-radius: 0;
-  width: auto;
-  font-weight: 500;
   padding: 3px 12px;
-  transition: all 0.2s;
+  width: auto;
+  color: #666;
   font-size: 95%;
+  font-weight: 500;
+  transition: all 0.2s;
 }
 
-.btn-contact:hover {
-  color: #f7d794;
+.btn--contact:hover {
   border-color: #f7d794;
+  color: #f7d794;
 }
 
-.footer2 {
+.footer--2 {
   background-color: #262626;
 }
 
-.design-text {
+.footer--2 .row {
+  margin: 0px;
+  text-align: center;
+}
+
+.footer--2__text {
+  margin: 5px auto;
   color: #666;
   font-size: 75%;
   font-weight: 500;
-  margin: 5px auto;
 }

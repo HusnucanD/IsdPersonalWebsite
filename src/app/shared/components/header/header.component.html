@@ -1,49 +1,42 @@
-<div class="navbar-upline">
+<div class="upline">
   <div class="container">
     <div class="row">
       <div class="col-lg-9" style="margin: 4px auto">
-        <fa-icon class="upline-icon" [icon]="faMap"></fa-icon>
-        <p class="upline-text">{{ string.location }}</p>
-        <fa-icon class="upline-icon" [icon]="faPhoneAlt"></fa-icon>
-        <p class="upline-text">{{ string.phone }}</p>
-        <a [href]="link.linkedin" target="_blank" style="color: #fff">
-          <fa-icon class="upline-icon2" [icon]="faLinkedin"></fa-icon>
+        <fa-icon class="upline__icon" [icon]="faMap"></fa-icon>
+        <p class="upline__text">{{ string.location }}</p>
+        <fa-icon class="upline__icon" [icon]="faPhoneAlt"></fa-icon>
+        <p class="upline__text">{{ string.phone }}</p>
+        <a [href]="link.linkedin" target="_blank">
+          <fa-icon class="upline__icon--2" [icon]="faLinkedin"></fa-icon>
         </a>
-        <a [href]="link.youtube" target="_blank" style="color: #fff">
-          <fa-icon class="upline-icon2" [icon]="faYoutube"></fa-icon>
+        <a [href]="link.youtube" target="_blank">
+          <fa-icon class="upline__icon--2" [icon]="faYoutube"></fa-icon>
         </a>
-        <a [href]="link.instagram" target="_blank" style="color: #fff">
-          <fa-icon class="upline-icon2" [icon]="faInstagram"></fa-icon>
+        <a [href]="link.instagram" target="_blank">
+          <fa-icon class="upline__icon--2" [icon]="faInstagram"></fa-icon>
         </a>
-        <a [href]="link.twitter" target="_blank" style="color: #fff">
-          <fa-icon class="upline-icon2" [icon]="faTwitter"></fa-icon>
+        <a [href]="link.twitter" target="_blank">
+          <fa-icon class="upline__icon--2" [icon]="faTwitter"></fa-icon>
         </a>
       </div>
     </div>
   </div>
 </div>
-<div class="navbar-menu">
+<div class="menu">
   <div class="container">
     <div class="row">
       <div class="col-lg-9" style="margin: 0px auto">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light"
-          style="background-color: #fff !important"
-        >
-          <div
-            class="container-fluid"
-            style="padding-left: 0px; padding-right: 0px"
-          >
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
             <a class="navbar-brand" routerLink="/">
               <img
                 src="../../../../assets/img/logo.svg"
                 alt="Logo"
                 width="50"
                 height="50"
-                class="d-inline-block align-text-top"
-                style="float: left"
+                class="navbar-brand__img d-inline-block align-text-top"
               />
-              <p class="navbar-brand-text">{{ string.title }}</p>
+              <p class="navbar-brand__text">{{ string.title }}</p>
             </a>
             <button
               class="navbar-toggler"
@@ -63,17 +56,17 @@
             >
               <div class="navbar-nav ms-auto">
                 <a
-                  class="nav-link nav-link-custom"
+                  class="nav-link nav-link--custom"
                   routerLink="/"
-                  routerLinkActive="nav-link-custom-active"
+                  routerLinkActive="nav-link--custom-active"
                   [routerLinkActiveOptions]="{ exact: true }"
                 >
                   {{ string.homeLinkText }}
                 </a>
-                <div class="nav-link-custom-div">
+                <div class="nav-link--div">
                   <a
-                    class="nav-link nav-link-custom-dropdown"
-                    [ngClass]="{ 'nav-link-custom-active': isServiceOn() }"
+                    class="nav-link nav-link--dropdown"
+                    [ngClass]="{ 'nav-link--custom-active': isServiceOn() }"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -86,17 +79,17 @@
                       *ngFor="let service of services"
                       class="dropdown-item"
                       [routerLink]="'/services/' + service.link"
-                      routerLinkActive="dropdown-item-active"
+                      routerLinkActive="dropdown-item--active"
                     >
-                      <div class="dropdown-item-div">
+                      <div class="dropdown-item__div">
                         <fa-icon
                           class="angle-down"
                           [icon]="faAngleDoubleDown"
                         ></fa-icon>
-                        <p class="dropdown-item-text">
+                        <p class="dropdown-item__text">
                           {{ service.title }}
                         </p>
-                        <p class="dropdown-item-subtext">
+                        <p class="dropdown-item__subtext">
                           {{ service.subTitle }}
                         </p>
                       </div>
@@ -104,23 +97,23 @@
                   </div>
                 </div>
                 <a
-                  class="nav-link nav-link-custom"
+                  class="nav-link nav-link--custom"
                   routerLink="/about"
-                  routerLinkActive="nav-link-custom-active"
+                  routerLinkActive="nav-link--custom-active"
                 >
                   {{ string.aboutLinkText }}
                 </a>
                 <a
-                  class="nav-link nav-link-custom"
+                  class="nav-link nav-link--custom"
                   routerLink="/blog"
-                  routerLinkActive="nav-link-custom-active"
+                  routerLinkActive="nav-link--custom-active"
                 >
                   {{ string.blogLinkText }}
                 </a>
                 <a
-                  class="nav-link nav-link-custom"
+                  class="nav-link nav-link--custom"
                   routerLink="/contact"
-                  routerLinkActive="nav-link-custom-active"
+                  routerLinkActive="nav-link--custom-active"
                 >
                   {{ string.contactLinkText }}
                 </a>
