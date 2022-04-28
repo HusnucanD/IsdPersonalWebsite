@@ -91,7 +91,7 @@
 }
 
 .navbar {
-  min-height: 100px;
+  min-height: 110px;
 }
 
 @media screen and (max-width: 991.5px) {
@@ -192,8 +192,7 @@
 
 .nav-link--div {
   position: relative;
-  margin-right: 25px;
-  margin-bottom: 5px;
+  margin: 0 25px 5px 0;
 }
 
 @media screen and (max-width: 991.5px) {
@@ -246,7 +245,7 @@
 }
 
 .dropdown-menu {
-  display: block;
+  display: none;
   left: -10px;
   opacity: 0;
   margin: 0;
@@ -261,6 +260,7 @@
 }
 
 .dropdown-menu.show {
+  display: block;
   opacity: 1;
   margin: 7.5px 0 5px;
   border: 1.5px solid #2980b9;
@@ -328,7 +328,7 @@
 
 .angle-down {
   position: absolute;
-  top: 5px;
+  top: 0.5px;
   left: -15px;
   color: #444;
   font-size: 90%;

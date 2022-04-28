@@ -10,6 +10,7 @@ import { State } from 'src/app/shared/services/state.service';
 export class ServiceComponent implements OnInit {
   title: string = '';
   subTitle: string = '';
+  imgUrl: string = '';
   content: string = '';
   constructor(
     private state: State,
@@ -22,6 +23,7 @@ export class ServiceComponent implements OnInit {
       if (service != undefined) {
         this.title = service.title;
         this.subTitle = service.subTitle;
+        this.imgUrl = service.imgUrl;
         this.content = service.content;
       } else {
         this.router.navigate(['']);

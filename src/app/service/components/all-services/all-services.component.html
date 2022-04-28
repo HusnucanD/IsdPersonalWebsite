@@ -1,0 +1,15 @@
+<div class="all-services">
+  <p class="all-services__title">All Services</p>
+  <a
+    *ngFor="let service of services"
+    [routerLink]="'/services/' + service.link"
+    routerLinkActive="link--active"
+  >
+    <div class="service-item">
+      <p class="service-item__text">{{ service.title }}</p>
+      <p class="service-item__subtext">
+        {{ service.subTitle }}
+      </p>
+    </div>
+  </a>
+</div>

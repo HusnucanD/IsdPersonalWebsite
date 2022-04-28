@@ -6,6 +6,7 @@ import { PostMainComponent } from './components/post-main/post-main.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostComponent } from './components/post/post.component';
 import { PostBoxComponent } from './components/post-box/post-box.component';
+import { LatestPostsComponent } from './components/latest-posts/latest-posts.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { PostBoxComponent } from './components/post-box/post-box.component';
     PostsComponent,
     PostComponent,
     PostBoxComponent,
+    LatestPostsComponent,
   ],
   imports: [CommonModule, SharedModule, PostRoutingModule],
   providers: [],

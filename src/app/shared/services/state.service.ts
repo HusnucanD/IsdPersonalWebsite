@@ -70,6 +70,7 @@ export class State {
         new Service(
           object[i].title,
           object[i].subTitle,
+          object[i].imgUrl,
           object[i].content,
           object[i].title.replace(/\s/g, '-').toLowerCase()
         )

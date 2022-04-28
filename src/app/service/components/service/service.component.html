@@ -1,13 +1,19 @@
 <div class="container pt-lg-5 pt-3 pb-lg-5 pb-3">
   <div class="row justify-content-md-center">
-    <div class="col-xl-9">
+    <div class="col-xl-10">
       <div class="row">
         <div class="col-lg-9">
-          <h3 class="">{{ title }}</h3>
-          <p class="mb-4">by {{ subTitle }}</p>
-          <div [innerHtml]="content"></div>
+          <div
+            [ngStyle]="{ 'background-image': 'url(' + imgUrl + ')' }"
+            class="service__img"
+          ></div>
+          <h3 class="service__title">{{ title }}</h3>
+          <p class="mb-4 service__subtitle">{{ subTitle }}</p>
+          <div [innerHtml]="content" class="service__content"></div>
         </div>
-        <div class="col-lg-3" style="background-color: #aaa"></div>
+        <div class="col-lg-3">
+          <all-services></all-services>
+        </div>
       </div>
     </div>
   </div>

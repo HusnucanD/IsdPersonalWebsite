@@ -5,9 +5,10 @@ import { SharedModule } from '../shared/shared.module';
 import { ServiceRoutingModule } from './service-routing.module';
 import { ServiceMainComponent } from './components/service-main/service-main.component';
 import { ServiceComponent } from './components/service/service.component';
+import { AllServicesComponent } from './components/all-services/all-services.component';
 
 @NgModule({
-  declarations: [ServiceMainComponent, ServiceComponent],
+  declarations: [ServiceMainComponent, ServiceComponent, AllServicesComponent],
   imports: [
     CommonModule,
     SharedModule,

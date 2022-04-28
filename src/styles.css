@@ -35,7 +35,7 @@ body {
   background-color: #666;
 }
 
-.btn-custom {
+.btn--custom {
   color: #373737;
   background-color: #fff;
   border: 1px solid #373737;
@@ -44,7 +44,7 @@ body {
   transition: all 0.2s;
 }
 
-.btn-custom:hover {
+.btn--custom:hover {
   color: #fff;
   background-color: #2677ab;
   border: 1px solid #2677ab;

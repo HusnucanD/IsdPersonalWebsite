@@ -1,0 +1,13 @@
+<p class="latest-title">{{ string.latest }}</p>
+<div
+  *ngFor="let post of latestPosts"
+  class="mb-2 latest-post"
+  (click)="latestPostClicked(post.id)"
+>
+  <div class="latest-post__img-div">
+    <img class="latest-post__img" [src]="post.imgUrl" />
+  </div>
+  <div class="latest-post__text-div">
+    <p class="latest-post__text">{{ post.title }}</p>
+  </div>
+</div>

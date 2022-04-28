@@ -1,0 +1,55 @@
+.latest-title {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  border-bottom: 1px solid #999;
+  cursor: default;
+  padding: 10px 0px 5px 0px;
+  font-family: "Merriweather";
+  font-size: 130%;
+}
+
+.latest-post {
+  cursor: pointer;
+  padding: 3.5px 5px 5px;
+  min-height: 50px;
+  font-family: "Merriweather";
+  transition: all 0.2s;
+}
+
+.latest-post:hover {
+  background-color: #e6e6e6;
+}
+
+.latest-post__img-div {
+  float: left;
+  margin-right: 7.5px;
+  width: 52.5px;
+}
+
+.latest-post__img {
+  margin-top: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .latest-post__img {
+    margin-top: 0px;
+  }
+}
+
+.latest-post__text-div {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  float: left;
+  width: calc(100% - 60px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.latest-post__text {
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  font-size: 87.5%;
+}

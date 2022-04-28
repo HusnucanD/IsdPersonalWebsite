@@ -1,25 +1,27 @@
-.custom-form {
+.form--custom {
   margin: 10px 0px 30px 0px;
 }
 
-.custom-label {
+.form__label {
+  font-size: 95%;
   font-weight: 500;
-  font-size: 90%;
 }
 
 .form-control {
   border: 1px solid #bbb;
   border-radius: 0px;
+  padding-top: 4px;
+  font-size: 92.5%;
 }
 
 .form-control:focus {
   box-shadow: none;
 }
 
-.custom-textarea {
+.form__textarea {
   resize: none;
 }
 
-.btn-custom {
+.btn--custom {
   width: 100%;
 }

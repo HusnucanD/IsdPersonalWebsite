@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { first } from 'rxjs';
-import { Post } from 'src/app/shared/models/post.model';
 import { State } from 'src/app/shared/services/state.service';
 
 @Component({
@@ -15,15 +13,11 @@ export class PostComponent implements OnInit {
   content: string;
   imgUrl: string;
   author: string;
-  latestPosts: Post[] = [];
-  string: any;
   constructor(
     private state: State,
     private router: Router,
     private activatedRoute: ActivatedRoute
-  ) {
-    this.string = this.state.string.post_post;
-  }
+  ) {}
   ngOnInit() {
     this.activatedRoute.params.subscribe((params) => {
       this.id = params['id'];
@@ -33,10 +27,6 @@ export class PostComponent implements OnInit {
         this.content = post.content;
         this.imgUrl = post.imgUrl;
         this.author = post.author;
-      }
-      let otherPosts = this.state.posts.filter((x) => x.id != this.id);
-      for (let i = 0; i < otherPosts.length && i < 3; i++) {
-        this.latestPosts[i] = otherPosts[i];
       }
     });
   }
