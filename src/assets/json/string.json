@@ -50,10 +50,14 @@
   },
   "contact_contactForm": {
     "name": "Name",
+    "nameWarning": "Please Enter Name",
     "surname": "Surname",
     "email": "Email",
+    "emailWarning": "Please Enter Email",
     "phone": "Phone",
+    "phoneWarning": "Please Enter Phone",
     "message": "Message",
+    "messageWarning": "Please Enter Message",
     "submit": "Submit"
   }
 }

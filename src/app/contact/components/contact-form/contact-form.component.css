@@ -2,6 +2,10 @@
   margin: 10px 0px 30px 0px;
 }
 
+.form-group__div {
+  position: relative;
+}
+
 .form__label {
   font-size: 95%;
   font-weight: 500;
@@ -18,10 +22,23 @@
   box-shadow: none;
 }
 
+.form__warning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 90%;
+  color: #e74c3c;
+}
+
 .form__textarea {
   resize: none;
 }
 
 .btn--custom {
   width: 100%;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid #e74c3c;
 }
