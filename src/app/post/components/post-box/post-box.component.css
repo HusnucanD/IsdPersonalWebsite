@@ -1,31 +1,31 @@
 .post-box {
-  width: 100%;
   margin: 0 auto;
   background-color: #fff;
+  width: 100%;
 }
 
-.post-box:hover .box-img {
+.post-box:hover .post-box__img {
   transform: scale(1.05);
 }
 
-.div-img {
+.post-box__div-img {
   overflow: hidden;
   width: 100%;
 }
 
-.box-img {
+.post-box__img {
   overflow: hidden;
   width: 100%;
   transition: all 0.5s;
 }
 
-.box-body {
+.post-box__body {
   position: relative;
   padding: 20px;
   border: 1px solid #555;
 }
 
-.box-title {
+.post-box__title {
   position: absolute;
   top: -25px;
   left: 7.5%;
@@ -43,7 +43,7 @@
   padding: 5px;
 }
 
-.box-text {
+.post-box__text {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Merriweather";

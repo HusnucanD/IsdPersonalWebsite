@@ -1,4 +1,4 @@
-<div class="container" style="padding-top: 30px; padding-bottom: 30px">
+<div class="container mt-5 pb-5">
   <div
     *ngFor="
       let row of data.rows.slice(
@@ -6,7 +6,7 @@
         (selectedPage - 1) * 2 + 2
       )
     "
-    class="row justify-content-md-center"
+    class="row justify-content-center"
   >
     <div class="col-lg-10">
       <div class="row">
@@ -22,10 +22,10 @@
     </div>
   </div>
   <div *ngIf="pagination" class="row">
-    <div class="pages-div">
+    <div class="pages">
       <a
         *ngFor="let pageButton of pages"
-        class="page-button"
+        class="pages__button"
         [ngClass]="{ selected: this.pageButton == this.selectedPage }"
         (click)="pageClick(pageButton)"
         >{{ pageButton }}</a

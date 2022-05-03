@@ -1,13 +1,14 @@
 <div class="all-services">
   <p class="all-services__title">All Services</p>
   <a
+    class="all-services__link"
     *ngFor="let service of services"
     [routerLink]="'/services/' + service.link"
-    routerLinkActive="link--active"
+    routerLinkActive="all-services__link--active"
   >
-    <div class="service-item">
-      <p class="service-item__text">{{ service.title }}</p>
-      <p class="service-item__subtext">
+    <div class="all-services__item">
+      <p class="all-services__text">{{ service.title }}</p>
+      <p class="all-services__subtext">
         {{ service.subTitle }}
       </p>
     </div>

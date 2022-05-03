@@ -1,4 +1,4 @@
-.pages-div {
+.pages {
   width: auto;
   padding: 5px 10px;
   background-color: #eee;
@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.page-button {
+.pages__button {
   margin: 0 10px 4px 10px;
   color: #222;
   text-decoration: unset;
