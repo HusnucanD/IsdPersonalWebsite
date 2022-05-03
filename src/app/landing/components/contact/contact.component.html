@@ -1,12 +1,12 @@
 <div class="contact">
-  <div class="contact-background"></div>
-  <div class="contact-layer"></div>
+  <div class="contact__background"></div>
+  <div class="contact__layer"></div>
   <div class="container">
     <div class="row" style="text-align: center">
-      <img [src]="imgUrl" class="icon" />
-      <h3 class="title">{{ string.title }}</h3>
-      <p class="text">{{ string.text }}</p>
-      <button class="btn btn-contact" routerLink="/contact">
+      <img [src]="imgUrl" class="contact__icon" />
+      <h3 class="contact__title">{{ string.title }}</h3>
+      <p class="contact__text">{{ string.text }}</p>
+      <button class="btn btn--contact" routerLink="/contact">
         {{ string.buttonText }}
       </button>
     </div>

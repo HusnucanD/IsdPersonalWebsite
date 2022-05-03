@@ -1,25 +1,25 @@
-.contact-map {
-  height: 400px;
+.map-title {
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.map {
   box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
   background-color: #ddd;
+  height: 400px;
 }
 
-.mapouter {
+.map__outer {
   position: relative;
-  text-align: right;
   height: 100%;
   width: 100%;
+  text-align: right;
 }
 
-.gmap_canvas {
+.map__canvas {
   overflow: hidden;
   background: none !important;
   height: 100%;
   width: 100%;
-}
-
-.contact-title {
-  font-size: 23px;
-  font-weight: 500;
-  margin-bottom: 10px;
 }

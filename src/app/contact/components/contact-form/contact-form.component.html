@@ -1,11 +1,11 @@
 <form [formGroup]="contactForm" class="form--custom">
   <div class="form-group row">
     <div class="form-group col-md-6 mb-3">
-      <div class="form-group__div">
-        <label class="form__label">{{ string.name }}</label>
+      <div class="form-div">
+        <label class="form-div__label">{{ string.name }}</label>
         <input type="text" formControlName="name" class="form-control" />
         <p
-          class="form__warning"
+          class="form-div__warning"
           *ngIf="
             this.contactForm.get('name')?.invalid &&
             this.contactForm.get('name')?.touched
@@ -16,18 +16,18 @@
       </div>
     </div>
     <div class="form-group col-md-6 mb-3">
-      <div class="form-group__div">
-        <label class="form__label">{{ string.surname }}</label>
+      <div class="form-div">
+        <label class="form-div__label">{{ string.surname }}</label>
         <input type="text" formControlName="surname" class="form-control" />
       </div>
     </div>
   </div>
   <div class="form-group mb-3">
-    <div class="form-group__div">
-      <label class="form__label">{{ string.email }}</label>
+    <div class="form-div">
+      <label class="form-div__label">{{ string.email }}</label>
       <input type="email" formControlName="email" class="form-control" />
       <p
-        class="form__warning"
+        class="form-div__warning"
         *ngIf="
           this.contactForm.get('email')?.invalid &&
           this.contactForm.get('email')?.touched
@@ -38,11 +38,11 @@
     </div>
   </div>
   <div class="form-group mb-3">
-    <div class="form-group__div">
-      <label class="form__label">{{ string.phone }}</label>
+    <div class="form-div">
+      <label class="form-div__label">{{ string.phone }}</label>
       <input type="tel" formControlName="telephone" class="form-control" />
       <p
-        class="form__warning"
+        class="form-div__warning"
         *ngIf="
           this.contactForm.get('telephone')?.invalid &&
           this.contactForm.get('telephone')?.touched
@@ -53,15 +53,15 @@
     </div>
   </div>
   <div class="form-group mb-3">
-    <div class="form-group__div">
-      <label class="form__label">{{ string.message }}</label>
+    <div class="form-div">
+      <label class="form-div__label">{{ string.message }}</label>
       <textarea
         formControlName="message"
         rows="3"
-        class="form-control form__textarea"
+        class="form-control form-div__textarea"
       ></textarea>
       <p
-        class="form__warning"
+        class="form-div__warning"
         *ngIf="
           this.contactForm.get('message')?.invalid &&
           this.contactForm.get('message')?.touched

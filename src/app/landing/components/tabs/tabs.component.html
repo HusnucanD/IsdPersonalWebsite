@@ -1,16 +1,16 @@
-<div class="container tabs-main">
-  <div class="row tab-header-row">
+<div class="container tabs">
+  <div class="row tabs__header">
     <div *ngFor="let tab of tabs; index as i" class="col-lg-3">
       <div
-        class="tab-header animate__animated animate__fadeInUp"
-        [ngClass]="{ 'tab-header-active': tab.visible }"
+        class="tabs__header-item animate__animated animate__fadeInUp"
+        [ngClass]="{ 'tabs__header-item--active': tab.visible }"
         (click)="tabClick(i)"
       >
-        <div class="tab-header-img-div">
-          <img [src]="tab.logoUrl" s class="tab-header-img" />
+        <div class="tabs__header-img-div">
+          <img [src]="tab.logoUrl" s class="tabs__header-img" />
         </div>
-        <div class="tab-header-text-div">
-          <p class="tab-header-text">{{ tab.title }}</p>
+        <div class="tabs__header-text-div">
+          <p class="tabs__header-text">{{ tab.title }}</p>
         </div>
       </div>
       <div

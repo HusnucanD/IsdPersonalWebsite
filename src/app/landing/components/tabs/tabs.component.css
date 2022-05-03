@@ -1,158 +1,153 @@
-.tabs-main {
+.tabs {
   margin-top: 10px;
   margin-bottom: 20px;
-  padding-left: 0px;
   padding-right: 0px;
+  padding-left: 0px;
 }
 
-.tab-header-row {
-  width: 85%;
+.tabs__header {
   margin: auto;
+  width: 85%;
 }
 
-.tab-header {
-  height: 75px;
-  margin: 0px 7.5px 0px 7.5px;
+.tabs__header-item {
   position: relative;
-  background-color: #5ca9db;
+  z-index: 100;
+  margin: 0px 7.5px 0px 7.5px;
   box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px,
     rgb(60 64 67 / 5%) 0px 1px 3px 1px;
+  background-color: #5ca9db;
+  height: 75px;
   cursor: pointer;
-  margin-top: 0px;
   transition: all 0.25s;
-  z-index: 100;
 }
 
-.tab-header:after {
+.tabs__header-item:after {
   position: absolute;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
   background: #2677ab;
+  width: 0%;
   height: 7px;
+  color: transparent;
+  content: ".";
   transition: all 0.5s;
 }
 
-.tab-header:hover:after {
+.tabs__header-item:hover:after {
   width: 100%;
 }
 
-.tab-header-active::before {
-  background-color: #2677ab;
-  content: "\00a0";
-  display: block;
-  height: 10px;
-  width: 10px;
+.tabs__header-item--active::before {
   position: absolute;
   bottom: -5px;
   left: calc(50% - 2.5px);
-  transform: rotate(47deg) skew(5deg);
-  -moz-transform: rotate(47deg) skew(5deg);
-  -ms-transform: rotate(47deg) skew(5deg);
-  -o-transform: rotate(47deg) skew(5deg);
-  -webkit-transform: rotate(47deg) skew(5deg);
+  display: block;
   z-index: -1;
+  background-color: #2677ab;
+  width: 10px;
+  height: 10px;
+  content: "\00a0";
+  transform: rotate(47deg) skew(5deg);
 }
 
-.tab-header-active::after {
+.tabs__header-item--active::after {
   width: 100%;
 }
 
-.tab-header-img-div {
-  background-color: #fff;
-  display: inline-block;
-  padding: 2.5px;
+.tabs__header-img-div {
   position: absolute;
-  left: calc(50% - 32.5px);
   top: -30px;
-  overflow: hidden;
+  left: calc(50% - 32.5px);
+  display: inline-block;
+  z-index: 200;
+  border: 1px solid #666;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border: 1px solid #666;
-  z-index: 200;
+  background-color: #fff;
+  padding: 2.5px;
+  overflow: hidden;
 }
 
-.tab-header-img {
-  filter: invert(47%) sepia(64%) saturate(540%) hue-rotate(160deg)
-    brightness(95%) contrast(92%);
+.tabs__header-img {
   width: 55px;
   height: 55px;
+  filter: invert(47%) sepia(64%) saturate(540%) hue-rotate(160deg)
+    brightness(95%) contrast(92%);
 }
 
-.tab-header-text-div {
-  text-align: center;
+.tabs__header-text-div {
   padding-top: 37.5px;
+  text-align: center;
 }
 
-.tab-header-text {
+.tabs__header-text {
   color: #fff;
   font-size: 110%;
   text-shadow: 0px 0px 5px rgb(0 0 0 / 70%);
 }
 
 @media (max-width: 993px) {
-  .tab-header {
+  .tabs__header-item {
     height: 70px;
   }
-  .tab-header-img-div {
-    left: calc(50% - 25px);
+  .tabs__header-img-div {
     top: -25px;
+    left: calc(50% - 25px);
   }
-  .tab-header-img {
+  .tabs__header-img {
     width: 50px;
     height: 50px;
   }
-  .tab-header-text-div {
+  .tabs__header-text-div {
     padding-top: 33px;
   }
 }
 
 @media (max-width: 768px) {
-  .tab-header-row {
+  .tabs__header {
     width: 90%;
   }
-  .tab-header {
+  .tabs__header-item {
     height: 65px;
   }
-  .tab-header-img-div {
-    left: calc(50% - 22.5px);
+  .tabs__header-img-div {
     top: -22.5px;
+    left: calc(50% - 22.5px);
   }
-  .tab-header-img {
+  .tabs__header-img {
     width: 45px;
     height: 45px;
   }
-  .tab-header-text-div {
+  .tabs__header-text-div {
     padding-top: 30.5px;
   }
-  .tab-header-text {
+  .tabs__header-text {
     font-size: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  .tab-header-row {
+  .tabs__header {
     width: 95%;
   }
-  .tab-header {
+  .tabs__header-item {
     height: 60px;
   }
-  .tab-header-img-div {
-    left: calc(50% - 20px);
+  .tabs__header-img-div {
     top: -20px;
+    left: calc(50% - 20px);
   }
-  .tab-header-img {
+  .tabs__header-img {
     width: 40px;
     height: 40px;
   }
-  .tab-header-text-div {
+  .tabs__header-text-div {
     padding-top: 27.5px;
   }
-  .tab-header-text {
+  .tabs__header-text {
     font-size: 90%;
   }
 }

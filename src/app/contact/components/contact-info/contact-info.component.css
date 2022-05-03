@@ -1,30 +1,30 @@
-.contact-title {
+.info-title {
+  margin-bottom: 0px;
   font-size: 29px;
   font-weight: 500;
-  margin-bottom: 0px;
 }
 
-.contact-text {
-  color: #6a6a6a;
+.info-text {
   margin-bottom: 30px;
-}
-
-.contact-sub-div {
-  position: relative;
   color: #6a6a6a;
-  margin-bottom: 15px;
-  font-weight: 500;
-  font-size: 95%;
 }
 
-.contact-icon {
+.info-div {
+  position: relative;
+  margin-bottom: 15px;
+  color: #6a6a6a;
+  font-size: 95%;
+  font-weight: 500;
+}
+
+.info-div__icon {
   position: absolute;
+  top: -4px;
   color: #2980b9;
   font-size: 130%;
-  top: -4px;
 }
 
-.contact-sub-text {
+.info-div__text {
   display: inline-block;
   margin-bottom: 0px;
   margin-left: 30px;

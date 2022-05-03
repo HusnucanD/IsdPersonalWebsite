@@ -1,11 +1,11 @@
-<div class="fader" #sliderRef>
+<div class="carousel" #sliderRef>
   <div
     [ngStyle]="{ opacity: opacities[idx] }"
-    class="fader__slide"
+    class="carousel__slide"
     *ngFor="let src of images; let idx = index"
   >
-    <div class="layer"></div>
-    <img [src]="src" />
+    <div class="carousel__layer"></div>
+    <img class="carousel__img" [src]="src" />
     <svg
       class="arrow arrow--left"
       (click)="slider.prev()"
@@ -24,12 +24,12 @@
     >
       <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
     </svg>
-    <div class="image-text">
+    <div class="carousel__text">
       <span>
         {{ texts[idx] }}
       </span>
       <br />
-      <button class="btn image-button" routerLink="/contact">
+      <button class="btn btn--carousel" routerLink="/contact">
         <span style="text-shadow: 0px 0px 14px rgb(0 0 0 / 50%)">
           {{ buttonText }}
         </span>

@@ -2,11 +2,11 @@
   margin: 10px 0px 30px 0px;
 }
 
-.form-group__div {
+.form-div {
   position: relative;
 }
 
-.form__label {
+.form-div__label {
   font-size: 95%;
   font-weight: 500;
 }
@@ -22,15 +22,15 @@
   box-shadow: none;
 }
 
-.form__warning {
+.form-div__warning {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 90%;
   color: #e74c3c;
+  font-size: 90%;
 }
 
-.form__textarea {
+.form-div__textarea {
   resize: none;
 }
 

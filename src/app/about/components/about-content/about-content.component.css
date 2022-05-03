@@ -1,31 +1,31 @@
-.profile-main {
-  line-height: 28px;
-  padding-left: 10px;
+.about-content {
   padding-right: 10px;
+  padding-left: 10px;
+  line-height: 28px;
 }
 
-.profile-text {
+.about-content__text {
   margin-bottom: 25px;
   text-align: justify;
 }
 
-.profile-list {
+.about-list {
   margin-bottom: 20px;
 }
 
-.profile-list-title {
+.about-list__title-icon {
+  position: absolute;
+  margin-right: 5px;
+  color: #2980b9;
+  font-size: 120%;
+}
+
+.about-list__title {
   margin-bottom: 0;
   margin-left: 18.5px;
 }
 
-.profile-list-title-icon {
-  color: #2980b9;
-  position: absolute;
-  font-size: 120%;
-  margin-right: 5px;
-}
-
-.profile-list-subtitle {
+.about-list__subtitle {
   margin-bottom: 0;
   margin-left: 18.5px;
   color: #999;

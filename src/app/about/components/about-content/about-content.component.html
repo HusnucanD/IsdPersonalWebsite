@@ -1,5 +1,5 @@
-<div class="profile-main">
-  <div class="profile-text">
+<div class="about-content">
+  <div class="about-content__text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Non enim praesent
     elementumfacilisis leo. Libero enim sed faucibus turpis. Urna neque viverra
@@ -10,7 +10,7 @@
     quam nullaporttitor massa id. Eget aliquet nibh praesent tristique magna sit
     amet purus. Adipiscing commodo elit at imperdiet dui accumsan.
   </div>
-  <div class="profile-text">
+  <div class="about-content__text">
     Lacus luctus accumsantortor posuere ac ut consequat semper viverra. Sit amet
     mattis vulputate enimnulla aliquet porttitor lacus luctus. Diam ut venenatis
     tellus in metusvulputate eu scelerisque. Vitae tortor condimentum lacinia
@@ -25,28 +25,28 @@
   <div class="row mt-4">
     <div class="col-lg-6" style="margin-bottom: 25px">
       <h4 class="mb-3">Education</h4>
-      <div class="profile-list" *ngFor="let education of educations">
+      <div class="about-list" *ngFor="let education of educations">
         <div>
           <fa-icon
-            class="profile-list-title-icon"
+            class="about-list__title-icon"
             [icon]="faAngleRight"
           ></fa-icon>
-          <p class="profile-list-title">{{ education.title }}</p>
+          <p class="about-list__title">{{ education.title }}</p>
         </div>
-        <p class="profile-list-subtitle">{{ education.subTitle }}</p>
+        <p class="about-list__subtitle">{{ education.subTitle }}</p>
       </div>
     </div>
     <div class="col-lg-6" style="margin-bottom: 25px">
       <h4 class="mb-3">Studies</h4>
-      <div class="profile-list" *ngFor="let study of studies">
+      <div class="about-list" *ngFor="let study of studies">
         <div>
           <fa-icon
-            class="profile-list-title-icon"
+            class="about-list__title-icon"
             [icon]="faAngleRight"
           ></fa-icon>
-          <p class="profile-list-title">{{ study.title }}</p>
+          <p class="about-list__title">{{ study.title }}</p>
         </div>
-        <p class="profile-list-subtitle">{{ study.subTitle }}</p>
+        <p class="about-list__subtitle">{{ study.subTitle }}</p>
       </div>
     </div>
   </div>

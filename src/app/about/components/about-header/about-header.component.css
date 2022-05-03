@@ -1,50 +1,50 @@
-.profile-header {
-  text-align: center;
+.about-header {
   position: relative;
-  background-color: #00804c;
   margin-bottom: 90px;
+  background-color: #00804c;
+  text-align: center;
 }
 
-.profile-name {
+.about-header__name {
+  margin-bottom: 5px;
+  letter-spacing: 3px;
   color: #fff;
   font-size: 220%;
   font-weight: 600;
-  letter-spacing: 3px;
-  margin-bottom: 5px;
 }
 
-.profile-title {
+.about-header__title {
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
   color: #d7d7d7;
   font-size: 120%;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
 }
 
-.profile-pic {
+.about-header__pic {
+  margin-bottom: -60px;
+  border: 1px solid #666;
+  border-radius: 50%;
   box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     rgb(0 0 0 / 30%) 0px 1px 3px -1px;
-  border: 1px solid #666;
-  margin-bottom: -60px;
-  border-radius: 50%;
 }
 
 @media (max-width: 360px) {
-  .profile-name {
+  .about-header__name {
     font-size: 210%;
   }
 
-  .profile-title {
+  .about-header__title {
     font-size: 120%;
   }
 }
 
 @media (max-width: 320px) {
-  .profile-name {
+  .about-header__name {
     font-size: 185%;
   }
 
-  .profile-title {
+  .about-header__title {
     font-size: 110%;
   }
 }

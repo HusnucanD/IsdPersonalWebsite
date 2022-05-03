@@ -7,7 +7,7 @@
     rgb(60 64 67 / 5%) 0px 1px 3px 1px;
 }
 
-.faq-title {
+.faq__title {
   margin-bottom: 0px;
   font-size: 190%;
   font-style: oblique;
@@ -17,7 +17,7 @@
   margin-bottom: 15px;
 }
 
-.faq-question {
+.faq__question {
   cursor: pointer;
   padding: 10px 30px 7.5px 5px;
   margin-top: 10px;
@@ -29,16 +29,8 @@
   font-weight: 500;
 }
 
-.faq-question:hover {
+.faq__question:hover {
   background-color: #e6e6e6;
-}
-
-.question-icon {
-  color: #2980b9;
-  font-size: 135%;
-  position: absolute;
-  right: 10px;
-  top: 7px;
 }
 
 .border-button-question {
@@ -46,7 +38,15 @@
   border-bottom: 1px solid #999;
 }
 
-.faq-answer {
+.faq__icon {
+  color: #2980b9;
+  font-size: 135%;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+.faq__answer {
   padding: 12px 5px 8px 15px;
   color: #555;
   font-size: 90%;
