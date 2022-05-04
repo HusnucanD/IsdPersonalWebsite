@@ -6,7 +6,9 @@
           <img class="service__img" [src]="imgUrl" />
           <h3 class="service__title">{{ title }}</h3>
           <p class="mb-4 service__subtitle">{{ subTitle }}</p>
-          <div [innerHtml]="content" class="mb-lg-0 mb-4"></div>
+          <div class="mb-lg-0 mb-4">
+            <content-container [Content]="content"></content-container>
+          </div>
         </div>
         <div class="col-lg-3">
           <all-services></all-services>

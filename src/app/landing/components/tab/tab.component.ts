@@ -1,23 +1,16 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'tab',
   templateUrl: './tab.component.html',
   styleUrls: ['./tab.component.css'],
-  encapsulation: ViewEncapsulation.None,
 })
-export class TabComponent implements OnInit {
+export class TabComponent {
   @Input('Content') content: string;
   @Input('Title') title: string;
   @Input('ImgUrl') imgUrl: string;
   _visible: boolean;
   animation: boolean;
-  contentSafe: SafeHtml;
-  constructor(private domSanitizer: DomSanitizer) {}
-  ngOnInit() {
-    this.contentSafe = this.domSanitizer.bypassSecurityTrustHtml(this.content);
-  }
   @Input('Visible') set visible(_visible: boolean) {
     this._visible = _visible;
     setTimeout(() => {
