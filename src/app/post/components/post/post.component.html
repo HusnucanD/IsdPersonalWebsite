@@ -6,7 +6,9 @@
           <img class="post-img mb-4" [src]="imgUrl" />
           <h3 class="post-title">{{ title }}</h3>
           <p class="post-author mb-4">by {{ author }}</p>
-          <div [innerHtml]="content" class="post-content"></div>
+          <div class="post-content">
+            <content-container [Content]="contents"></content-container>
+          </div>
         </div>
         <div class="col-lg-3">
           <latest-posts></latest-posts>

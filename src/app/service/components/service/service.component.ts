@@ -1,3 +1,4 @@
+import { Content } from '../../../shared/models';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { State } from 'src/app/shared/services/state.service';
@@ -11,7 +12,7 @@ export class ServiceComponent implements OnInit {
   title: string = '';
   subTitle: string = '';
   imgUrl: string = '';
-  content: string = '';
+  contents: Content[] = [];
   constructor(
     private state: State,
     private router: Router,
@@ -24,7 +25,7 @@ export class ServiceComponent implements OnInit {
         this.title = service.title;
         this.subTitle = service.subTitle;
         this.imgUrl = service.imgUrl;
-        this.content = service.content;
+        this.contents = service.contents;
       } else {
         this.router.navigate(['']);
       }

@@ -28,7 +28,7 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  background: #2677ab;
+  background: #2980b9;
   width: 0%;
   height: 7px;
   color: transparent;
@@ -46,7 +46,7 @@
   left: calc(50% - 2.5px);
   display: block;
   z-index: -1;
-  background-color: #2677ab;
+  background-color: #2980b9;
   width: 10px;
   height: 10px;
   content: "\00a0";

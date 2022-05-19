@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Content } from 'src/app/shared/models';
 import { State } from 'src/app/shared/services/state.service';
 
 declare const $: any;
@@ -12,7 +13,7 @@ declare const $: any;
 export class PostBoxComponent {
   @Input('Id') id: number;
   @Input('Title') title: string;
-  @Input('Content') content: string;
+  @Input('Contents') contents: Content[];
   @Input('ImgUrl') imgUrl: string;
   string: any;
   constructor(
@@ -21,10 +22,6 @@ export class PostBoxComponent {
     private state: State
   ) {
     this.string = this.state.string.post_postBox;
-    $(document).ready(function () {
-      var divWidth = $('.div-img').width();
-      $('.div-img').css('height', (divWidth * 2) / 3 + 'px');
-    });
   }
   postClick(id: number) {
     this.router.navigate(['./', id], { relativeTo: this.route });

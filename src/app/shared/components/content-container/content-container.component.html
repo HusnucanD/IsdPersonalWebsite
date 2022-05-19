@@ -1,1 +1,19 @@
-<div [innerHtml]="contentSafe"></div>
+<div *ngIf="contents != null && contents.length > 0">
+  <div *ngFor="let content of contents">
+    <div [ngSwitch]="content.type">
+      <content-text
+        *ngSwitchCase="'content-text'"
+        [Content]="content.content"
+      ></content-text>
+      <content-list
+        *ngSwitchCase="'content-list'"
+        [Content]="content.content"
+      ></content-list>
+      <content-button
+        *ngSwitchCase="'content-button'"
+        [Text]="content.text"
+        [Link]="content.link"
+      ></content-button>
+    </div>
+  </div>
+</div>

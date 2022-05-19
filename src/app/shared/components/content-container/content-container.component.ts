@@ -1,18 +1,16 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Content } from '../../models';
 
 @Component({
   selector: 'content-container',
   templateUrl: './content-container.component.html',
   styleUrls: ['./content-container.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class ContentContainerComponent implements OnInit {
-  @Input('Content') content: string;
-  contentSafe: SafeHtml;
-  constructor(private domSanitizer: DomSanitizer) { }
+  @Input('Content') contents: any[];
+  constructor() {}
   ngOnInit() {
-    this.contentSafe = this.domSanitizer.bypassSecurityTrustHtml(this.content);
+    console.log(this.contents);
   }
 }
-

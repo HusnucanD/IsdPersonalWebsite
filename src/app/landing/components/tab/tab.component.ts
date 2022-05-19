@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Content } from 'src/app/shared/models';
 
 @Component({
   selector: 'tab',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tab.component.css'],
 })
 export class TabComponent {
-  @Input('Content') content: string;
+  @Input('Content') contents: Content[];
   @Input('Title') title: string;
   @Input('ImgUrl') imgUrl: string;
   _visible: boolean;

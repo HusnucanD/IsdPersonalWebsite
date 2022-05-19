@@ -24,15 +24,15 @@
   margin-bottom: 50px;
   margin-right: 50px;
   background-color: #ffffff;
-  background-image: radial-gradient(#5ca9db 1.5px, #ffffff 1.1px);
+  background-image: radial-gradient(#2980b9 1.5px, #ffffff 1.1px);
   background-size: 10px 10px;
 }
 
 .tab__img {
   width: 100%;
   transform: translate(30px, 25px);
-  border-right: 4px solid #2677ab;
-  border-bottom: 4px solid #2677ab;
+  border-right: 4px solid #2980b9;
+  border-bottom: 4px solid #2980b9;
 }
 
 @media (max-width: 993px) {

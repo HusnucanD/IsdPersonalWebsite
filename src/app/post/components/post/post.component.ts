@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { State } from 'src/app/shared/services/state.service';
+import { Content } from 'src/app/shared/models';
 
 @Component({
   selector: 'post',
@@ -10,7 +11,7 @@ import { State } from 'src/app/shared/services/state.service';
 export class PostComponent implements OnInit {
   id: number;
   title: string;
-  content: string;
+  contents: Content[];
   imgUrl: string;
   author: string;
   constructor(
@@ -24,7 +25,7 @@ export class PostComponent implements OnInit {
       let post = this.state.posts.find((x) => x.id == this.id);
       if (post != undefined) {
         this.title = post.title;
-        this.content = post.content;
+        this.contents = post.contents;
         this.imgUrl = post.imgUrl;
         this.author = post.author;
       }

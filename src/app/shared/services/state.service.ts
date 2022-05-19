@@ -1,5 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Faq, Tab, Post, Service } from '../models';
+import {
+  Content,
+  ContentText,
+  ContentList,
+  ContentButton,
+  Faq,
+  Tab,
+  Post,
+  Service,
+} from '../models';
 import * as StringJson from '../../../assets/json/string.json';
 import * as LinkJson from '../../../assets/json/link.json';
 import * as TabJson from '../../../assets/json/tab.json';
@@ -41,7 +50,7 @@ export class State {
       this.tabs.push(
         new Tab(
           object[i].title,
-          object[i].content,
+          this.getContents(JSON.parse(JSON.stringify(object[i].contents))),
           object[i].logoUrl,
           object[i].imgUrl,
           object[i].visible
@@ -71,7 +80,7 @@ export class State {
           object[i].title,
           object[i].subTitle,
           object[i].imgUrl,
-          object[i].content,
+          this.getContents(JSON.parse(JSON.stringify(object[i].contents))),
           object[i].title.replace(/\s/g, '-').toLowerCase()
         )
       );
@@ -88,11 +97,39 @@ export class State {
         new Post(
           object[i].id,
           object[i].title,
-          object[i].content,
+          this.getContents(JSON.parse(JSON.stringify(object[i].contents))),
           object[i].imgUrl,
           object[i].author
         )
       );
     }
+  }
+
+  getContents(contentsObjectParam: any): Content[] {
+    const contents: Content[] = [];
+    const contentsObject = JSON.parse(JSON.stringify(contentsObjectParam));
+    for (let i = 0; i < contentsObject.length; i++) {
+      switch (contentsObject[i].type) {
+        case 'content-text':
+          contents.push(new ContentText(contentsObject[i].content));
+          break;
+        case 'content-list':
+          const list: string[] = [];
+          const listObject = JSON.parse(
+            JSON.stringify(contentsObject[i].content)
+          );
+          for (let i = 0; i < listObject.length; i++) {
+            list.push(listObject[i] as string);
+          }
+          contents.push(new ContentList(list));
+          break;
+        case 'content-button':
+          contents.push(
+            new ContentButton(contentsObject[i].text, contentsObject[i].link)
+          );
+          break;
+      }
+    }
+    return contents;
   }
 }

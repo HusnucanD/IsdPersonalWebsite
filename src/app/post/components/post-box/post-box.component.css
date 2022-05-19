@@ -21,7 +21,7 @@
 
 .post-box__body {
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 15px;
   border: 1px solid #555;
 }
 
@@ -44,17 +44,13 @@
 }
 
 .post-box__text {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: "Merriweather";
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  font-family: "Merriweather";
+  margin-bottom: 10px;
+  line-height: 22.5px;
+  height: 100px;
   word-wrap: break-word;
   font-size: 80%;
-  line-height: 22.5px;
 }
 
 .btn--custom {

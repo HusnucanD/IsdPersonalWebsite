@@ -46,8 +46,8 @@ body {
 
 .btn--custom:hover {
   color: #fff;
-  background-color: #2677ab;
-  border: 1px solid #2677ab;
+  background-color: #2980b9;
+  border: 1px solid #2980b9;
 }
 
 .btn:focus,
