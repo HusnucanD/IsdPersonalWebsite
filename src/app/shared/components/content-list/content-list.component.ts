@@ -8,7 +8,4 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 })
 export class ContentListComponent {
   @Input('Content') items: string[];
-  constructor() {
-    console.log(this.items);
-  }
 }

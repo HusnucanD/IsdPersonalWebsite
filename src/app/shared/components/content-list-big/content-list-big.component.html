@@ -1,0 +1,10 @@
+<div class="content-list-big">
+  <h4 class="mb-3">{{ listBig.title }}</h4>
+  <div class="list-big" *ngFor="let item of listBig.content">
+    <div>
+      <fa-icon class="list-big__title-icon" [icon]="faAngleRight"></fa-icon>
+      <p class="list-big__title">{{ item.title }}</p>
+    </div>
+    <p class="list-big__subtitle">{{ item.subTitle }}</p>
+  </div>
+</div>

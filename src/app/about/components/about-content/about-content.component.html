@@ -1,52 +1,18 @@
-<div class="about-content">
-  <div class="about-content__text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Non enim praesent
-    elementumfacilisis leo. Libero enim sed faucibus turpis. Urna neque viverra
-    justo necultrices dui sapien. Nulla malesuada pellentesque elit eget. Urna
-    porttitor rhoncus dolor purus non. Id aliquet lectus proin nibh. Ut sem
-    viverra aliqueteget sit. Et odio pellentesque diam volutpat. Ridiculus mus
-    mauris vitaeul tricies leo integer malesuada nunc vel. Et leo duis ut diam
-    quam nullaporttitor massa id. Eget aliquet nibh praesent tristique magna sit
-    amet purus. Adipiscing commodo elit at imperdiet dui accumsan.
-  </div>
-  <div class="about-content__text">
-    Lacus luctus accumsantortor posuere ac ut consequat semper viverra. Sit amet
-    mattis vulputate enimnulla aliquet porttitor lacus luctus. Diam ut venenatis
-    tellus in metusvulputate eu scelerisque. Vitae tortor condimentum lacinia
-    quis. Facilisisgravida neque convallis a cras semper. Tristique senectus et
-    netus etmalesuada. Ac turpis egestas maecenas pharetra convallis posuere.
-    Dolor sedviverra ipsum nunc aliquet bibendum enim. Viverra orci sagittis eu
-    volutpatodio facilisis mauris sit. Senectus et netus et malesuada fames ac.
-    Donec etodio pellentesque diam volutpat commodo. Eget felis eget nunc
-    lobortis mattisaliquam faucibus. Nisl vel pretium lectus quam id leo in
-    vitae.
-  </div>
-  <div class="row mt-4">
-    <div class="col-lg-6" style="margin-bottom: 25px">
-      <h4 class="mb-3">Education</h4>
-      <div class="about-list" *ngFor="let education of educations">
-        <div>
-          <fa-icon
-            class="about-list__title-icon"
-            [icon]="faAngleRight"
-          ></fa-icon>
-          <p class="about-list__title">{{ education.title }}</p>
-        </div>
-        <p class="about-list__subtitle">{{ education.subTitle }}</p>
-      </div>
+<div *ngIf="contents != null && contents.length > 0" class="about-content">
+  <div *ngIf="texts != null && texts.length > 0">
+    <div *ngFor="let text of texts">
+      <content-text [Content]="text.content"></content-text>
     </div>
-    <div class="col-lg-6" style="margin-bottom: 25px">
-      <h4 class="mb-3">Studies</h4>
-      <div class="about-list" *ngFor="let study of studies">
-        <div>
-          <fa-icon
-            class="about-list__title-icon"
-            [icon]="faAngleRight"
-          ></fa-icon>
-          <p class="about-list__title">{{ study.title }}</p>
+  </div>
+  <div *ngIf="lists != null && lists.length > 0">
+    <div *ngFor="let list of lists; let i = index">
+      <div *ngIf="i % 2 == 0" class="row">
+        <div class="col-lg-6">
+          <content-list-big [Content]="lists[i]"></content-list-big>
         </div>
-        <p class="about-list__subtitle">{{ study.subTitle }}</p>
+        <div class="col-lg-6" *ngIf="i + 1 < lists.length">
+          <content-list-big [Content]="lists[i + 1]"></content-list-big>
+        </div>
       </div>
     </div>
   </div>

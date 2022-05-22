@@ -1,0 +1,28 @@
+.content-list-big {
+  display: inline-block;
+  margin: 25px 0px;
+  font-size: 16px;
+}
+
+.list-big {
+  margin-bottom: 20px;
+}
+
+.list-big__title-icon {
+  position: absolute;
+  margin-right: 5px;
+  color: #2980b9;
+  font-size: 120%;
+}
+
+.list-big__title {
+  margin-bottom: 0;
+  margin-left: 18.5px;
+}
+
+.list-big__subtitle {
+  margin-bottom: 0;
+  margin-left: 18.5px;
+  color: #999;
+  font-size: 95%;
+}

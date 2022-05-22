@@ -3,31 +3,3 @@
   padding-left: 10px;
   line-height: 28px;
 }
-
-.about-content__text {
-  margin-bottom: 25px;
-  text-align: justify;
-}
-
-.about-list {
-  margin-bottom: 20px;
-}
-
-.about-list__title-icon {
-  position: absolute;
-  margin-right: 5px;
-  color: #2980b9;
-  font-size: 120%;
-}
-
-.about-list__title {
-  margin-bottom: 0;
-  margin-left: 18.5px;
-}
-
-.about-list__subtitle {
-  margin-bottom: 0;
-  margin-left: 18.5px;
-  color: #999;
-  font-size: 95%;
-}

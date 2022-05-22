@@ -7,10 +7,6 @@ import { Content } from '../../models';
   styleUrls: ['./content-container.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ContentContainerComponent implements OnInit {
+export class ContentContainerComponent {
   @Input('Content') contents: any[];
-  constructor() {}
-  ngOnInit() {
-    console.log(this.contents);
-  }
 }

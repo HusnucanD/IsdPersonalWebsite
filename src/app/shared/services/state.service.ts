@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
 import {
+  About,
   Content,
   ContentText,
   ContentList,
+  ContentListBig,
+  ListBigItem,
   ContentButton,
   Faq,
   Tab,
@@ -15,6 +18,7 @@ import * as TabJson from '../../../assets/json/tab.json';
 import * as FaqJson from '../../../assets/json/faq.json';
 import * as ServiceJson from '../../../assets/json/service.json';
 import * as PostJson from '../../../assets/json/post.json';
+import * as AboutJson from '../../../assets/json/about.json';
 
 @Injectable({
   providedIn: 'root',
@@ -27,6 +31,7 @@ export class State {
     this.setFaqs();
     this.setServices();
     this.setPosts();
+    this.setAbout();
   }
 
   /* String */
@@ -105,6 +110,17 @@ export class State {
     }
   }
 
+  /* About */
+  public about: About;
+  setAbout() {
+    const object: any = AboutJson;
+    this.about = new About(
+      object.name,
+      object.title,
+      this.getContents(JSON.parse(JSON.stringify(object.contents)))
+    );
+  }
+
   getContents(contentsObjectParam: any): Content[] {
     const contents: Content[] = [];
     const contentsObject = JSON.parse(JSON.stringify(contentsObjectParam));
@@ -122,6 +138,19 @@ export class State {
             list.push(listObject[i] as string);
           }
           contents.push(new ContentList(list));
+          break;
+        case 'content-list-big':
+          const title = contentsObject[i].title;
+          const listBig: ListBigItem[] = [];
+          const listBigObject = JSON.parse(
+            JSON.stringify(contentsObject[i].content)
+          );
+          for (let i = 0; i < listBigObject.length; i++) {
+            listBig.push(
+              new ListBigItem(listBigObject[i].title, listBigObject[i].subTitle)
+            );
+          }
+          contents.push(new ContentListBig(title, listBig));
           break;
         case 'content-button':
           contents.push(

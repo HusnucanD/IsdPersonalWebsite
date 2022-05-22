@@ -1,3 +1,4 @@
+export * from './about.model';
 export * from './content.model';
 export * from './faq.model';
 export * from './post.model';

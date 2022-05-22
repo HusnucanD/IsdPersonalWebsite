@@ -9,6 +9,10 @@
         *ngSwitchCase="'content-list'"
         [Content]="content.content"
       ></content-list>
+      <content-list-big
+        *ngSwitchCase="'content-list-big'"
+        [Content]="content"
+      ></content-list-big>
       <content-button
         *ngSwitchCase="'content-button'"
         [Text]="content.text"
