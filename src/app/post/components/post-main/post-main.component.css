@@ -23,6 +23,12 @@
   z-index: 15;
 }
 
+@media (max-width: 576px) {
+  .title__background {
+    background-attachment: initial;
+  }
+}
+
 .title__layer {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);

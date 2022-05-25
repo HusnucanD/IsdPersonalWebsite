@@ -53,6 +53,10 @@
   font-size: 14px;
 }
 
+.post-box__text content-text .content-text {
+  font-size: 14px;
+}
+
 .btn--custom {
   padding: 3px 12px;
   width: 100%;

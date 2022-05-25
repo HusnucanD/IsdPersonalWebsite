@@ -27,6 +27,16 @@
   z-index: 15;
 }
 
+@media (max-width: 576px) {
+  .contact__background {
+    background-attachment: initial;
+  }
+
+  .contact__layer {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+}
+
 .contact__icon {
   width: 115px;
   z-index: 20;
