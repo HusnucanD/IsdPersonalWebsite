@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { State } from 'src/app/shared/services/state.service';
 import { Content } from 'src/app/shared/models';
@@ -7,6 +7,7 @@ import { Content } from 'src/app/shared/models';
   selector: 'post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class PostComponent implements OnInit {
   id: number;

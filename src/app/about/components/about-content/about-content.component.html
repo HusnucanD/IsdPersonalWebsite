@@ -1,12 +1,12 @@
 <div *ngIf="contents != null && contents.length > 0" class="about-content">
   <div *ngIf="texts != null && texts.length > 0">
-    <div *ngFor="let text of texts">
+    <div *ngFor="let text of texts" style="margin-bottom: 10px">
       <content-text [Content]="text.content"></content-text>
     </div>
   </div>
   <div *ngIf="lists != null && lists.length > 0">
     <div *ngFor="let list of lists; let i = index">
-      <div *ngIf="i % 2 == 0" class="row">
+      <div *ngIf="i % 2 == 0" class="row" style="margin-bottom: 10px">
         <div class="col-lg-6">
           <content-list-big [Content]="lists[i]"></content-list-big>
         </div>

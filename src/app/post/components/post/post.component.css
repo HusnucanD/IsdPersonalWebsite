@@ -23,3 +23,8 @@
   line-height: 26px;
   text-align: justify;
 }
+
+.post-content content-container content-text .content-text,
+.post-content content-container content-list .content-list {
+  font-size: 14.5px;
+}
