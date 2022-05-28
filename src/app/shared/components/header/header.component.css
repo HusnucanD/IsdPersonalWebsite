@@ -124,7 +124,7 @@
   margin: 8px 0 0 5px;
   color: #2980b9;
   letter-spacing: 0.5px;
-  font-size: 115%;
+  font-size: 120%;
   font-weight: 700;
 }
 
@@ -143,7 +143,7 @@
   padding-bottom: 5px;
   padding-left: 5px;
   color: #444;
-  font-size: 115%;
+  font-size: 116%;
   font-weight: 600;
   transition: all 0.5s;
 }
@@ -171,7 +171,7 @@
   margin: auto;
   background: #2980b9;
   width: 0%;
-  height: 1.5px;
+  height: 5%;
   color: transparent;
   content: ".";
   transition: all 0.5s;
@@ -207,7 +207,7 @@
   padding-bottom: 5px;
   padding-left: 5px;
   color: #444;
-  font-size: 115%;
+  font-size: 116%;
   font-weight: 600;
   transition: all 0.5s;
 }
@@ -220,7 +220,7 @@
   margin: auto;
   background: #2980b9;
   width: 0%;
-  height: 1.5px;
+  height: 5%;
   color: transparent;
   content: ".";
   transition: all 0.5s;

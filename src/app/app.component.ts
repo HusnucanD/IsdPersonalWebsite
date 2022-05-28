@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { State } from './shared/services/state.service';
 
 @Component({
   selector: 'app-root',
   template: '<router-outlet></router-outlet>',
-  styles: [''],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'Personal Website';
-  constructor(private state: State) {}
-  ngOnInit() {
-    this.state.setAll();
-  }
 }

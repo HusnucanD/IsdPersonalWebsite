@@ -1,0 +1,455 @@
+{
+  "data": {
+    "about": {
+      "name": "John Michael Doe",
+      "title": "Licensed Clinical Therapist",
+      "contents": [
+        {
+          "type": "content-text",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non enim praesentelementumfacilisis leo. Libero enim sed faucibus turpis. Urna neque viverra justo necultrices dui sapien. Nulla malesuada pellentesque elit eget. Urna porttitor rhoncus dolor purus non. Id aliquet lectus proin nibh. Ut sem viverra aliqueteget sit. Et odio pellentesque diam volutpat. Ridiculus mus mauris vitaeul tricies leo integer malesuada nunc vel. Et leo duis ut diam quam nullaporttitor massa id. Eget aliquet nibh praesent tristique magna sit amet purus. Adipiscing commodo elit at imperdiet dui accumsan."
+        },
+        {
+          "type": "content-text",
+          "content": "Lacus luctus accumsantortor posuere ac ut consequat semper viverra. Sit amet mattis vulputate enimnulla aliquet porttitor lacus luctus. Diam ut venenatis tellus in metusvulputate eu scelerisque. Vitae tortor condimentum lacinia quis. Facilisisgravida neque convallis a cras semper. Tristique senectus et netus etmalesuada. Ac turpis egestas maecenas pharetra convallis posuere. Dolor sedviverra ipsum nunc aliquet bibendum enim. Viverra orci sagittis eu volutpatodio facilisis mauris sit. Senectus et netus et malesuada fames ac. Donec etodio pellentesque diam volutpat commodo. Eget felis eget nunc lobortis mattisaliquam faucibus. Nisl vel pretium lectus quam id leo in vitae."
+        },
+        {
+          "type": "content-list-big",
+          "title": "Education",
+          "content": [
+            {
+              "title": "Et netus et malesuada fames ac turpis",
+              "subTitle": "Tellus cras adipiscing enim eu turpis egestas"
+            },
+            {
+              "title": "Et netus et malesuada fames ac turpis",
+              "subTitle": "Molestie ac feugiat sed lectus vestibulum atorine"
+            },
+            {
+              "title": "Mattis ullamcorper velit. Consectetur adipiscing",
+              "subTitle": "Pellentesque nec nam aliquam sem et tortor"
+            },
+            {
+              "title": "Imperdiet nulla malesuada pellentesque elit",
+              "subTitle": "Eget nulla facilisi etiam dignissim diam quis"
+            },
+            {
+              "title": "Ut sem viverra aliquet eget sit amet tellus potenti",
+              "subTitle": "Velit scelerisque in dictum non consectetur"
+            }
+          ]
+        },
+        {
+          "type": "content-list-big",
+          "title": "Studies",
+          "content": [
+            {
+              "title": "Cursus vitae congue mauris rhoncus aenean vel",
+              "subTitle": "Tellus cras adipiscing enim eu turpis egestas"
+            },
+            {
+              "title": "Tortor pretium viverra suspendisse potenti",
+              "subTitle": "Molestie ac feugiat sed lectus vestibulum atorine"
+            },
+            {
+              "title": "Quis commodo odio aenean sed adipiscing diam donec",
+              "subTitle": "Pellentesque nec nam aliquam sem et tortor"
+            },
+            {
+              "title": "Massa sed elementum tempus egestas sed sed",
+              "subTitle": "Eget nulla facilisi etiam dignissim diam quis"
+            },
+            {
+              "title": "Mauris pharetra et ultrices neque ornare aenean euismod",
+              "subTitle": "Velit scelerisque in dictum non consectetur"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": [
+      {
+        "id": 0,
+        "title": "Phasellus a lobortis lectus?",
+        "answer": "Quisque et imperdiet elit. Integer et ornare lectus. Integer auctor, ex a lobortis congue, justo massa placerat metus"
+      },
+      {
+        "id": 1,
+        "title": "Non faucibus nisi purus sed enim?",
+        "answer": "Sed nunc neque, volutpat et feugiat sit amet, molestie non nisi. Nam dapibus, nibh non commodo imperdiet"
+      },
+      {
+        "id": 2,
+        "title": "Felis mauris lacinia nunc, non vestibulum?",
+        "answer": "Neque metus in mauris. Morbi ex diam, dignissim vel dictum et, mattis vitae metus. Aliquam et maximus mi"
+      },
+      {
+        "id": 3,
+        "title": "Sed pretium aliquet placerat suspendisse?",
+        "answer": "Elit lorem, volutpat ut ullamcorper ut, suscipit vitae turpis. Suspendisse pretium tempor est, tempor laoreet leo"
+      },
+      {
+        "id": 4,
+        "title": "Sed ut neque et eros rhoncus accumsan?",
+        "answer": "Itae at arcu. Nunc posuere eget odio vel volutpat. Integer eget nisl sit amet libero condimentum sagittis. Curabitur aliquet ornare"
+      },
+      {
+        "id": 5,
+        "title": "Duis maximus, est sit amet tincidunt condimentum?",
+        "answer": "Metus dolor fermentum massa, ut porta felis ante et augue. Sed turpis purus, molestie non ornare a, hendrerit a risus"
+      }
+    ],
+    "link": {
+      "header": {
+        "linkedin": "https://linkedin.com",
+        "youtube": "https://youtube.com",
+        "instagram": "https://instagram.com",
+        "twitter": "https://twitter.com"
+      },
+      "footer": {
+        "linkedin": "https://linkedin.com",
+        "youtube": "https://youtube.com",
+        "instagram": "https://instagram.com",
+        "twitter": "https://twitter.com"
+      }
+    },
+    "post": [
+      {
+        "id": 0,
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Sapien pellentesque habitant morbi tristique senectus et netus et. Viverra justo nec ultrices dui sapien eget mi proin sed. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Faucibus pulvinar elementum integer enim neque volutpat ac. Nibh ipsum consequat nisl vel pretium lectus quam id. Dictumst vestibulum rhoncus est pellentesque elit. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Euismod in pellentesque massa placerat duis. Dictumst vestibulum rhoncus est pellentesque elit. Fames ac turpis egestas sed tempus. Vitae tortor condimentum lacinia quis vel. Proin sed libero enim sed faucibus turpis. Mattis ullamcorper velit sed ullamcorper morbi tincidunt."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog1.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 1,
+        "title": "Ultrices Dui Sapien Eget Mi Proin",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Ultrices dui sapien eget mi proin. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Nisl vel pretium lectus quam id leo in vitae turpis. Blandit turpis cursus in hac. Est placerat in egestas erat imperdiet sed euismod nisi. Tortor pretium viverra suspendisse potenti. Malesuada fames ac turpis egestas integer eget. Sit amet nisl suscipit adipiscing bibendum. Quis varius quam quisque id diam vel quam. Sed euismod nisi porta lorem mollis aliquam. Est placerat in egestas erat imperdiet sed euismod nisi. In nibh mauris cursus mattis molestie a iaculis. Ac placerat vestibulum lectus mauris ultrices eros in cursus. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Eu feugiat pretium nibh ipsum. Aliquet sagittis id consectetur purus ut. Sit amet consectetur adipiscing elit."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog2.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 2,
+        "title": "Nunc Lobortis Mattis Aliquam Faucibus",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Nunc lobortis mattis aliquam faucibus purus in massa tempor. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio ut sem nulla pharetra diam sit amet nisl suscipit. A scelerisque purus semper eget duis at. Viverra adipiscing at in tellus integer feugiat scelerisque. Enim ut tellus elementum sagittis. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Libero justo laoreet sit amet cursus sit amet dictum. Odio morbi quis commodo odio aenean sed adipiscing. Elementum nisi quis eleifend quam adipiscing. Consectetur purus ut faucibus pulvinar elementum integer enim."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog3.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 3,
+        "title": "In Iaculis Nunc Sed Augue Lacus",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "In iaculis nunc sed augue lacus viverra vitae congue eu. Lacus suspendisse faucibus interdum posuere lorem. Sit amet consectetur adipiscing elit ut aliquam purus sit. Etiam dignissim diam quis enim lobortis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Non nisi est sit amet. Et ultrices neque ornare aenean euismod. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Senectus et netus et malesuada fames. Consectetur libero id faucibus nisl. Netus et malesuada fames ac turpis egestas sed tempus."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog4.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 4,
+        "title": "Venenatis a Condimentum Vitae",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Integer quis auctor elit sed. Viverra vitae congue eu consequat ac. A diam maecenas sed enim. Bibendum neque egestas congue quisque egestas diam in arcu. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Pharetra massa massa ultricies mi. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet venenatis urna cursus eget nunc scelerisque. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Risus ultricies tristique nulla aliquet enim. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Consequat mauris nunc congue nisi vitae suscipit. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sapien faucibus et molestie ac feugiat sed lectus. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Tristique risus nec feugiat in fermentum posuere. Amet dictum sit amet justo. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Id neque aliquam vestibulum morbi blandit cursus risus. Sed risus ultricies tristique nulla aliquet enim. Eget nulla facilisi etiam dignissim diam quis. Accumsan in nisl nisi scelerisque. Faucibus turpis in eu mi bibendum neque. In ante metus dictum at. Tellus in metus vulputate eu scelerisque. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Pulvinar mattis nunc sed blandit libero. Sed faucibus turpis in eu mi bibendum neque egestas. Ut morbi tincidunt augue interdum velit. Adipiscing elit duis tristique sollicitudin nibh sit amet. Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Lectus proin nibh nisl condimentum id venenatis a."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog5.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 5,
+        "title": "Risus Ultricies Tristique Nulla",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Id neque aliquam vestibulum morbi blandit cursus risus. Sed risus ultricies tristique nulla aliquet enim. Eget nulla facilisi etiam dignissim diam quis. Accumsan in nisl nisi scelerisque. Faucibus turpis in eu mi bibendum neque. In ante metus dictum at. Tellus in metus vulputate eu scelerisque. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Pulvinar mattis nunc sed blandit libero. Sed faucibus turpis in eu mi bibendum neque egestas. Ut morbi tincidunt augue interdum velit. Adipiscing elit duis tristique sollicitudin nibh sit amet. Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Lectus proin nibh nisl condimentum id venenatis a."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog6.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 6,
+        "title": "Semper Petentium Nec Ex",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Semper petentium nec ex, est libris iriure ceteros cu. No adhuc putent discere vis, an vix dicant officiis. Ex eam vivendo mediocrem efficiantur, eu quo odio feugiat officiis. At mel assum ocurreret dissentiunt. Et option tritani vix, et apeirian accommodare ius. Lucilius postulant constituto nam ut, quo cu quis prodesset efficiantur, ad nec petentium constituto expetendis. Erat discere an his, ne efficiendi intellegam qui, eu pri fugit everti. Est epicurei tractatos ex. No nullam possim dissentias per, sumo phaedrum nec ex, nec diam dolore et. An sed etiam ubique, no eam alia semper incorrupte. Ad dicam nostro imperdiet pro, cu mel legere vulputate. Ullum perfecto nominati ne sed, ad salutandi explicari nec. Ad adhuc dicunt discere sea, ei populo laoreet tincidunt vix. Nulla albucius probatus in pro. Utroque intellegebat usu ne. Sed nonumy eligendi an, duo tation scripserit eu."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog7.jpg",
+        "author": "Author"
+      },
+      {
+        "id": 7,
+        "title": "Adolescens Ea Mollis Erroribus",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Sed errem tollit te, per soleat adolescens ea, mollis erroribus honestatis ne ius. Eos quas audiam noluisse at, et ius iudicabit rationibus. Ea minimum iracundia duo, id mel audiam voluptatum. Persecuti deterruisset nec ex, omnis errem has ne, quod saperet adipiscing mei ne. Bonorum perpetua vix in, habemus instructior ex usu, nec ornatus nominavi consetetur in. Cu eleifend philosophia deterruisset mei. Eruditi inimicus eum at, duo eu dolor maluisset intellegebat, veri postulant repudiandae qui in. Per timeam labores complectitur ex, ius minim adipiscing ex. Pri te quaestio praesent deterruisset, usu accumsan antiopam perpetua te, saepe appetere corrumpit eam no. Solum laudem sapientem sit cu. At vis tacimates definitionem, mel ad adhuc munere labore. Aperiri scaevola scripserit at sit, porro insolens mei ne. Aeterno prodesset voluptatum eu nam, mel et tation eligendi maluisset, has cu denique percipit sententiae."
+          }
+        ],
+        "imgUrl": "../../../../assets/img/blog8.jpg",
+        "author": "Author"
+      }
+    ],
+    "service": [
+      {
+        "id": 0,
+        "title": "Dolores Eos",
+        "subTitle": "Etiam sodales molestie",
+        "imgUrl": "../../../../assets/img/service1.jpg",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Integer quis auctor elit sed. Viverra vitae congue eu consequat ac. A diam maecenas sed enim. Bibendum neque egestas congue quisque egestas diam in arcu. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum."
+          },
+          {
+            "type": "content-list",
+            "content": [
+              "lacus ac massa",
+              "Maecenas dolor neque",
+              "Ut quis laoreet leo",
+              "Eget dapibus arcu mauris",
+              "Enim ante fringilla nisl"
+            ]
+          },
+          {
+            "type": "content-text",
+            "content": "Pharetra massa massa ultricies mi. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet venenatis urna cursus eget nunc scelerisque. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Risus ultricies tristique nulla aliquet enim. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Consequat mauris nunc congue nisi vitae suscipit. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sapien faucibus et molestie ac feugiat sed lectus. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Tristique risus nec feugiat in fermentum posuere. Amet dictum sit amet justo. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio ut sem nulla pharetra diam sit amet nisl suscipit. A scelerisque purus semper eget duis at. Viverra adipiscing at in tellus integer feugiat scelerisque. Enim ut tellus elementum sagittis. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Libero justo laoreet sit amet cursus sit amet dictum. Odio morbi quis commodo odio aenean sed adipiscing. Elementum nisi quis eleifend quam adipiscing. Consectetur purus ut faucibus pulvinar elementum integer enim."
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Qui Ratione",
+        "subTitle": "Odio morbi quis",
+        "imgUrl": "../../../../assets/img/service2.jpg",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Integer quis auctor elit sed. Viverra vitae congue eu consequat ac. A diam maecenas sed enim. Bibendum neque egestas congue quisque egestas diam in arcu. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum."
+          },
+          {
+            "type": "content-text",
+            "content": "Pharetra massa massa ultricies mi. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet venenatis urna cursus eget nunc scelerisque. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Risus ultricies tristique nulla aliquet enim. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Consequat mauris nunc congue nisi vitae suscipit. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sapien faucibus et molestie ac feugiat sed lectus. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Tristique risus nec feugiat in fermentum posuere. Amet dictum sit amet justo. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio ut sem nulla pharetra diam sit amet nisl suscipit. A scelerisque purus semper eget duis at. Viverra adipiscing at in tellus integer feugiat scelerisque. Enim ut tellus elementum sagittis. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Libero justo laoreet sit amet cursus sit amet dictum. Odio morbi quis commodo odio aenean sed adipiscing. Elementum nisi quis eleifend quam adipiscing. Consectetur purus ut faucibus pulvinar elementum integer enim."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Exercitationem",
+        "subTitle": "Viverra adipiscing",
+        "imgUrl": "../../../../assets/img/service3.jpg",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Integer quis auctor elit sed. Viverra vitae congue eu consequat ac. A diam maecenas sed enim. Bibendum neque egestas congue quisque egestas diam in arcu. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum."
+          },
+          {
+            "type": "content-list",
+            "content": [
+              "lacus ac massa",
+              "Maecenas dolor neque",
+              "Ut quis laoreet leo",
+              "Eget dapibus arcu mauris",
+              "Enim ante fringilla nisl"
+            ]
+          },
+          {
+            "type": "content-text",
+            "content": "Pharetra massa massa ultricies mi. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet venenatis urna cursus eget nunc scelerisque. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Risus ultricies tristique nulla aliquet enim. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Consequat mauris nunc congue nisi vitae suscipit. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sapien faucibus et molestie ac feugiat sed lectus. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Tristique risus nec feugiat in fermentum posuere. Amet dictum sit amet justo. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio ut sem nulla pharetra diam sit amet nisl suscipit. A scelerisque purus semper eget duis at. Viverra adipiscing at in tellus integer feugiat scelerisque. Enim ut tellus elementum sagittis. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Libero justo laoreet sit amet cursus sit amet dictum. Odio morbi quis commodo odio aenean sed adipiscing. Elementum nisi quis eleifend quam adipiscing. Consectetur purus ut faucibus pulvinar elementum integer enim."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Consectetur Purus",
+        "subTitle": "Elementum nisi",
+        "imgUrl": "../../../../assets/img/service4.jpg",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Integer quis auctor elit sed. Viverra vitae congue eu consequat ac. A diam maecenas sed enim. Bibendum neque egestas congue quisque egestas diam in arcu. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Pharetra massa massa ultricies mi. Id velit ut tortor pretium viverra suspendisse potenti nullam. Sit amet venenatis urna cursus eget nunc scelerisque. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Risus ultricies tristique nulla aliquet enim. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Consequat mauris nunc congue nisi vitae suscipit. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sapien faucibus et molestie ac feugiat sed lectus. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Tristique risus nec feugiat in fermentum posuere. Amet dictum sit amet justo. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio ut sem nulla pharetra diam sit amet nisl suscipit. A scelerisque purus semper eget duis at. Viverra adipiscing at in tellus integer feugiat scelerisque. Enim ut tellus elementum sagittis. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Libero justo laoreet sit amet cursus sit amet dictum. Odio morbi quis commodo odio aenean sed adipiscing. Elementum nisi quis eleifend quam adipiscing. Consectetur purus ut faucibus pulvinar elementum integer enim."
+          }
+        ]
+      }
+    ],
+    "string": {
+      "header": {
+        "homeLinkText": "Home",
+        "servicesLinkText": "Services",
+        "aboutLinkText": "About",
+        "blogLinkText": "Blog",
+        "contactLinkText": "Contact",
+        "location": "Location",
+        "phone": "0555 555 55 55",
+        "title": "MyWebsite"
+      },
+      "footer": {
+        "contact": "contact",
+        "title": "MyWebsite",
+        "description": "©Copyright [[Year]]. All rights reserved to [[Title]]. No content can be used without permission.",
+        "designed": "Created by IronSmithDesign"
+      },
+      "landing_carousel": {
+        "text1": "Lorem Ipsum Dolor Sit Amet Consectetur",
+        "text2": "Adipiscing Elit, Sed Do Eiusmod",
+        "text3": "Tempor Incididunt Ut Labore Et",
+        "button": "Get Contact"
+      },
+      "landing_contact": {
+        "title": "Got a Question",
+        "text": "Contact us for any questions or making an appointment",
+        "buttonText": "Contact"
+      },
+      "landing_faq": {
+        "title": "FAQ"
+      },
+      "service_serviceMain": {
+        "title": "Services"
+      },
+      "post_postMain": {
+        "title": "Blog"
+      },
+      "post_postBox": {
+        "readMore": "Read More"
+      },
+      "post_latestPosts": {
+        "latest": "Latest Posts"
+      },
+      "contact_contactInfo": {
+        "title": "Get in Touch",
+        "text": "For any of your questions or planning a meet-up please get in touch. You can call, send a mail, or send a message over our web site.",
+        "subTextAddress": "2880 Broadway - New York 10025",
+        "subTextPhone": "+1 (555) 123-4567",
+        "subTextEmail": "test-mail@test.com"
+      },
+      "contact_contactForm": {
+        "name": "Name",
+        "nameWarning": "Please Enter Name",
+        "surname": "Surname",
+        "email": "Email",
+        "emailWarning": "Please Enter Email",
+        "phone": "Phone",
+        "phoneWarning": "Please Enter Phone",
+        "message": "Message",
+        "messageWarning": "Please Enter Message",
+        "submit": "Submit"
+      }
+    },
+    "tab": [
+      {
+        "id": 0,
+        "title": "Dolores Eos",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt arcu sit amet felis gravida, non rhoncus tellus suscipit. Aliquam placerat, turpis at tincidunt luctus, felis arcu volutpat nunc, id dignissim ex"
+          },
+          {
+            "type": "content-list",
+            "content": [
+              "lacus ac massa",
+              "Maecenas dolor neque",
+              "Ut quis laoreet leo"
+            ]
+          },
+          {
+            "type": "content-text",
+            "content": "Etiam in libero malesuada, faucibus sem at, fermentum tortor. Etiam sodales molestie quam, et euismod nisi."
+          },
+          {
+            "type": "content-button",
+            "text": "See More",
+            "link": "/contact"
+          }
+        ],
+        "logoUrl": "../../../../assets/img/tab_header1.svg",
+        "imgUrl": "../../../../assets/img/tab1.jpg",
+        "visible": true
+      },
+      {
+        "id": 1,
+        "title": "Qui Ratione",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Vivamus feugiat, urna vitae elementum congue, enim ante fringilla nisl, eget dapibus arcu mauris at lectus. Fusce ut semper mi. Aenean ante mi, egestas eu dui ac, faucibus suscipit risus. Sed sed consectetur lacus. Sed malesuada volutpat sem."
+          },
+          {
+            "type": "content-button",
+            "text": "See More",
+            "link": "/contact"
+          }
+        ],
+        "logoUrl": "../../../../assets/img/tab_header2.svg",
+        "imgUrl": "../../../../assets/img/tab2.jpg",
+        "visible": false
+      },
+      {
+        "id": 2,
+        "title": "Voluptatem",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Etiam in libero malesuada, faucibus sem at, fermentum tortor. Etiam sodales molestie quam, et euismod nisi. Etiam tristique nibh nulla, vitae cursus risus hendrerit ac. Vestibulum eget lectus nec sapien eleifend ultricies. Pellentesque mollis."
+          },
+          {
+            "type": "content-button",
+            "text": "See More",
+            "link": "/contact"
+          }
+        ],
+        "logoUrl": "../../../../assets/img/tab_header3.svg",
+        "imgUrl": "../../../../assets/img/tab3.jpg",
+        "visible": false
+      },
+      {
+        "id": 3,
+        "title": "Exercitationem",
+        "contents": [
+          {
+            "type": "content-text",
+            "content": "Ut quis laoreet leo. Integer eget dapibus risus. Maecenas dolor neque, hendrerit ut ornare ut, fringilla at nisi. Nam id porta mi. Maecenas tristique tellus in condimentum dignissim. Aenean pulvinar orci sed ante consectetur condimentum."
+          },
+          {
+            "type": "content-list",
+            "content": [
+              "lacus ac massa",
+              "Maecenas dolor neque",
+              "Ut quis laoreet leo",
+              "Eget dapibus arcu mauris",
+              "Enim ante fringilla nisl"
+            ]
+          },
+          {
+            "type": "content-button",
+            "text": "See More",
+            "link": "/contact"
+          }
+        ],
+        "logoUrl": "../../../../assets/img/tab_header4.svg",
+        "imgUrl": "../../../../assets/img/tab4.jpg",
+        "visible": false
+      }
+    ]
+  }
+}

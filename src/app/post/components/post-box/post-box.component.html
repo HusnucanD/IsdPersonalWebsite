@@ -1,6 +1,6 @@
 <div class="post-box">
   <div class="post-box__div-img">
-    <img [src]="imgUrl" class="post-box__img" />
+    <img [src]="imgUrl" class="post-box__img" loading="lazy" />
   </div>
   <div class="post-box__body">
     <p class="post-box__title" title="{{ title }}">{{ title }}</p>
@@ -8,7 +8,7 @@
       <content-container [Content]="contents"></content-container>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-5 col-md-5 col-sm-6 col-6">
+      <div class="col-lg-7 col-md-9 col-sm-9 col-9">
         <a class="btn btn--custom" (click)="postClick(id)">
           {{ string.readMore }}
         </a>

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import {
   About,
   Content,
@@ -12,44 +13,43 @@ import {
   Post,
   Service,
 } from '../models';
-import * as StringJson from '../../../assets/json/string.json';
-import * as LinkJson from '../../../assets/json/link.json';
-import * as TabJson from '../../../assets/json/tab.json';
-import * as FaqJson from '../../../assets/json/faq.json';
-import * as ServiceJson from '../../../assets/json/service.json';
-import * as PostJson from '../../../assets/json/post.json';
-import * as AboutJson from '../../../assets/json/about.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class State {
-  setAll() {
-    this.setString();
-    this.setLink();
-    this.setTabs();
-    this.setFaqs();
-    this.setServices();
-    this.setPosts();
-    this.setAbout();
+  constructor(private http: HttpClient) {}
+
+  getData() {
+    return this.http.get('http://localhost:3000/data');
+  }
+
+  setData(data: any) {
+    this.setString(data.string);
+    this.setLink(data.link);
+    this.setTabs(data.tab);
+    this.setFaqs(data.faq);
+    this.setServices(data.service);
+    this.setPosts(data.post);
+    this.setAbout(data.about);
   }
 
   /* String */
   public string: any;
-  setString() {
-    this.string = StringJson;
+  setString(string: any) {
+    this.string = string;
   }
 
   /* Link */
   public link: any;
-  setLink() {
-    this.link = LinkJson;
+  setLink(link: any) {
+    this.link = link;
   }
 
   /* Tab */
   public tabs: Tab[] = [];
-  setTabs() {
-    const object = JSON.parse(JSON.stringify(TabJson));
+  setTabs(tabs: any) {
+    const object = JSON.parse(JSON.stringify(tabs));
     this.tabs = [];
     for (let i = 0; i < object.length; i++) {
       this.tabs.push(
@@ -66,8 +66,8 @@ export class State {
 
   /* Faq */
   public faqs: Faq[] = [];
-  setFaqs() {
-    const object = JSON.parse(JSON.stringify(FaqJson));
+  setFaqs(faqs: any) {
+    const object = JSON.parse(JSON.stringify(faqs));
     this.faqs = [];
     for (let i = 0; i < object.length; i++) {
       this.faqs.push(new Faq(object[i].id, object[i].title, object[i].answer));
@@ -76,8 +76,8 @@ export class State {
 
   /* Service */
   public services: Service[] = [];
-  setServices() {
-    const object = JSON.parse(JSON.stringify(ServiceJson));
+  setServices(services: any) {
+    const object = JSON.parse(JSON.stringify(services));
     this.services = [];
     for (let i = 0; i < object.length; i++) {
       this.services.push(
@@ -94,8 +94,8 @@ export class State {
 
   /* Post */
   public posts: Post[] = [];
-  setPosts() {
-    const object = JSON.parse(JSON.stringify(PostJson));
+  setPosts(posts: any) {
+    const object = JSON.parse(JSON.stringify(posts));
     this.posts = [];
     for (let i = 0; i < object.length; i++) {
       this.posts.push(
@@ -112,8 +112,8 @@ export class State {
 
   /* About */
   public about: About;
-  setAbout() {
-    const object: any = AboutJson;
+  setAbout(about: any) {
+    const object: any = about;
     this.about = new About(
       object.name,
       object.title,

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContentButtonComponent } from './components/content-button/content-button.component';
 import { ContentContainerComponent } from './components/content-container/content-container.component';
 import { ContentListComponent } from './components/content-list/content-list.component';
@@ -20,7 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
     FooterComponent,
     HeaderComponent,
   ],
-  imports: [CommonModule, FontAwesomeModule, RouterModule],
+  imports: [CommonModule, RouterModule, FontAwesomeModule],
   providers: [],
   exports: [
     ContentButtonComponent,
