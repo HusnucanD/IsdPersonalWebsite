@@ -356,6 +356,19 @@
         "message": "Message",
         "messageWarning": "Please Enter Message",
         "submit": "Submit"
+      },
+      "admin_adminLogin": {
+        "title": "MyWebsite",
+        "screenTitle": "Admin Login"
+      },
+      "admin_adminLoginForm": {
+        "email": "Email",
+        "emailWarning": "Please Enter Email",
+        "password": "Password",
+        "passwordWarning1": "Please Enter Password",
+        "passwordWarning2": "Wrong Password",
+        "forgetPassword": "Forget Password ?",
+        "submit": "Enter"
       }
     },
     "tab": [

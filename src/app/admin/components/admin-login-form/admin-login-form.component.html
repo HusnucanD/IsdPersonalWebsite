@@ -1,0 +1,30 @@
+<form class="form--custom" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div class="form-group mb-3">
+    <div class="form-div">
+      <label class="form-div__label">{{ string.email }}</label>
+      <input type="email" formControlName="email" class="form-control" />
+      <p class="form-div__warning" *ngIf="this.loginForm.get('email')?.invalid && this.loginForm.get('email')?.touched">
+        {{ string.emailWarning }}
+      </p>
+    </div>
+  </div>
+  <div class="form-group mb-3">
+    <div class="form-div">
+      <label class="form-div__label">{{ string.password }}</label>
+      <input type="password" formControlName="password" class="form-control" />
+      <p class="form-div__warning" *ngIf="this.loginForm.get('password')?.invalid && this.loginForm.get('password')?.touched">
+        {{ string.passwordWarning1 }}
+      </p>
+      <div class="form-div__right-link">
+        <a (click)="forgetPassword()">{{ string.forgetPassword }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-9 col-md-6 col-lg-5 col-xl-3">
+      <button type="submit" class="btn btn--custom" [disabled]="this.loginForm.touched && this.loginForm.invalid">
+        {{ string.submit }}
+      </button>
+    </div>
+  </div>
+</form>

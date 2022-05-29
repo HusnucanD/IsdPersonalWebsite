@@ -22,4 +22,7 @@ export class ContactFormComponent implements OnInit {
       message: new FormControl(null, Validators.required),
     });
   }
+  onSubmit() {
+    
+  }
 }

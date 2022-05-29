@@ -1,16 +1,10 @@
-<form [formGroup]="contactForm" class="form--custom">
+<form class="form--custom" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="form-group row">
     <div class="form-group col-md-6 mb-3">
       <div class="form-div">
         <label class="form-div__label">{{ string.name }}</label>
         <input type="text" formControlName="name" class="form-control" />
-        <p
-          class="form-div__warning"
-          *ngIf="
-            this.contactForm.get('name')?.invalid &&
-            this.contactForm.get('name')?.touched
-          "
-        >
+        <p class="form-div__warning" *ngIf="this.contactForm.get('name')?.invalid && this.contactForm.get('name')?.touched">
           {{ string.nameWarning }}
         </p>
       </div>
@@ -26,13 +20,7 @@
     <div class="form-div">
       <label class="form-div__label">{{ string.email }}</label>
       <input type="email" formControlName="email" class="form-control" />
-      <p
-        class="form-div__warning"
-        *ngIf="
-          this.contactForm.get('email')?.invalid &&
-          this.contactForm.get('email')?.touched
-        "
-      >
+      <p class="form-div__warning" *ngIf="this.contactForm.get('email')?.invalid && this.contactForm.get('email')?.touched">
         {{ string.emailWarning }}
       </p>
     </div>

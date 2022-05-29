@@ -1,0 +1,51 @@
+.form-div {
+  position: relative;
+	text-align: left;
+}
+  
+.form-div__label {
+  font-size: 95%;
+  font-weight: 500;
+}
+  
+.form-control {
+  border: 1px solid #bbb;
+  border-radius: 0px;
+  padding-top: 4px;
+  font-size: 92.5%;
+}
+  
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-div__warning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #e74c3c;
+  font-size: 90%;
+}
+
+.form-div__right-link {
+	margin-top: 3px;
+	text-align: right;
+	color: #777;
+}
+
+.form-div__right-link a{
+	color: #777;
+	font-size: 95%;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.btn--custom {
+	padding: 6px 20px;
+  margin: auto;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid #e74c3c;
+}
