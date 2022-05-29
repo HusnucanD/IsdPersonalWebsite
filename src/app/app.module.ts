@@ -5,21 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainDataLoaderService } from './shared/services/main-data.loader.service';
 
-export function mainDataLoader(mainDataLoaderService: MainDataLoaderService) {
-  return () => mainDataLoaderService.init();
-}
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [
     {
       provide: APP_INITIALIZER,
-      useFactory: mainDataLoader,
+      useFactory: (mainDataLoader: MainDataLoaderService) => () => mainDataLoader.init(),
       deps: [MainDataLoaderService],
       multi: true,
     },
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

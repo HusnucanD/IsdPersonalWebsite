@@ -5,6 +5,7 @@ import { State } from './state.service';
 @Injectable({
   providedIn: 'root',
 })
+
 export class MainDataLoaderService {
   constructor(private state: State) {}
 
