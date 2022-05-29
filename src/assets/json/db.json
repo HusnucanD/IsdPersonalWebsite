@@ -293,6 +293,9 @@
       }
     ],
     "string": {
+      "global": {
+        "title": "MyWebsite"
+      },
       "header": {
         "homeLinkText": "Home",
         "servicesLinkText": "Services",

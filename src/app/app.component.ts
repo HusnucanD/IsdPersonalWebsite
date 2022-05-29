@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { State } from './shared/services/state.service';
 
 @Component({
@@ -7,5 +7,9 @@ import { State } from './shared/services/state.service';
   template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'Personal Website';
+  string: any;
+  constructor(private state: State, private title: Title) {
+    this.string = this.state.string.global;
+    this.title.setTitle(this.string.title);
+  }
 }
