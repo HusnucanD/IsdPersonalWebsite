@@ -10,6 +10,8 @@ export class MainDataLoaderService {
   constructor(private state: State) {}
 
   public init() {
-    return this.state.getData().pipe(tap((data) => this.state.setData(data)));
+    return this.state.getData().pipe(tap((data) => {
+      this.state.setData(data);
+    }));
   }
 }

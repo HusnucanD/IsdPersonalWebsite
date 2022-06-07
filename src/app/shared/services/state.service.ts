@@ -22,10 +22,11 @@ export class State {
   constructor(private http: HttpClient) {}
 
   getData() {
-    return this.http.get('http://localhost:3000/data');
+    return this.http.get('api/UIData');
   }
 
-  setData(data: any) {
+  setData(dataResponse: any) {
+    const data = dataResponse.data;
     this.setString(data.string);
     this.setLink(data.link);
     this.setTabs(data.tab);
