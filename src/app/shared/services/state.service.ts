@@ -17,12 +17,12 @@ import {
 @Injectable({
   providedIn: 'root',
 })
-
 export class State {
   constructor(private http: HttpClient) {}
 
   getData() {
-    return this.http.get('api/UIData');
+    //return this.http.get('api/UIData');
+    return this.http.get('assets/json/db.json');
   }
 
   setData(dataResponse: any) {
