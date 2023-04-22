@@ -276,7 +276,7 @@
 @media only screen and (min-width: 991.5px) {
   .dropdown-menu::before {
     position: absolute;
-    top: -21px;
+    top: -20px;
     left: calc(45% - 55px);
     border: 0.8em solid transparent;
     border-bottom: 7px solid #2980b9;
